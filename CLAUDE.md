@@ -1,11 +1,87 @@
-# MazyOS — Sistema operacional do negócio
+# Nexora — MazyOS
 
-Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
-do MazyOS — como o Claude lê o contexto, aprende com correções, mantém
-tudo atualizado e cria skills novas conforme a operação evolui.
+> Operação da Nexora, agência de marketing digital sendo construída do
+> zero por Manoel Vitor, sozinho. Aqui ficam todos os clientes,
+> briefings, entregas e cobrança.
 
-Esse arquivo é editável. Quando o `/instalar` rodar, ele complementa o
-final dessa página com as regras específicas do seu negócio.
+**Estrutura de pastas:**
+- `_memoria/` — quem é a Nexora, como fala, foco atual
+- `identidade/` — marca da Nexora (dark, editorial) aplicada nas entregas
+- `clientes/` — uma subpasta por cliente, autossuficiente
+- `propostas/` — propostas em rascunho ou enviadas
+- `referencias/` — sites de referência pra usar na criação de sites futuros
+- `marketing/` — conteúdo próprio da Nexora (Insta, portfolio)
+- `saidas/` — emails, documentos pontuais
+- `dados/` — arquivos a analisar
+- `tarefas.md` — pipeline, prazos, próximos passos
+
+## Quem sou
+
+Sou o Manoel Vitor, construindo a Nexora, agência de marketing digital,
+sozinho e do zero. Hoje entrego sites e landing pages; a Nexora já se
+posiciona como agência completa (site, tráfego pago, SEO, automação com
+IA), mesmo entregando só sites por enquanto.
+
+## Meu serviço
+
+- Criação de sites e landing pages (foco atual)
+- Tráfego pago, SEO e automação com IA (próximos passos, ainda não
+  ativos)
+
+Capacidade simultânea: solo, sem equipe — um projeto de cada vez até
+ganhar ritmo.
+
+## Clientes ativos
+
+Nenhum cliente pago ainda. Fase atual é de treino: construir mais
+alguns sites pra pegar o jeito antes de vender pra valer. O
+`/atualizar` mantém isso sincronizado com as pastas em `clientes/`
+assim que o primeiro cliente entrar.
+
+## Perfil de cliente
+
+Empresas de pequeno/médio porte que já têm marketing ok (postam com
+frequência no Instagram, bem avaliadas no Google, ticket um pouco
+maior), mas ainda não têm site, não rodam tráfego pago/SEO nem
+automação com IA. Já sabem que têm essa lacuna — não precisam ser
+convencidas do problema, só de quem resolve.
+
+## Como trabalho
+
+Ainda no início — processo de briefing, entrega e prazos vai sendo
+definido conforme os primeiros projetos (de treino e depois pagos)
+acontecerem. Site de referência de estilo (treino, não definitivo):
+https://website-alpha-rust-86.vercel.app
+
+## Tom de voz
+
+Direto, conversacional, sem jargão de guru. Frases curtas, travessão
+pra ênfase, foco em resultado prático. Exemplo real: "Um site que não
+é cartão de visita. É vendedor trabalhando 24 horas por dia."
+
+Evitar: linguagem que soe como quem só quer vender sem entregar de
+verdade — "vamos juntos!", "alavancar", "sinergia", promessa vazia. A
+satisfação real do cliente é a prioridade da Nexora, e a escrita
+precisa deixar isso claro.
+
+## Regras do sistema
+
+- Cliente novo → criar pasta `clientes/<Nome>/` com `briefing.md`
+- Proposta enviada → `clientes/<Nome>/proposta.html` (ou pasta
+  `propostas/` se ainda não fechou)
+- Gargalo atual é duplo: (1) construir mais sites de treino até
+  entregar um resultado confiável, (2) resolver prospecção ativa —
+  candidata forte a virar skill via `/mapear-rotinas`
+- Outras regras que aparecerem com o uso
+
+## Ferramentas conectadas
+
+- [ ] Notion
+- [ ] Gmail
+- [ ] Google Calendar
+- [ ] Stripe / cobrança
+
+*(Marcar conforme for instalando os MCPs)*
 
 ---
 
