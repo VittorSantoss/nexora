@@ -110,6 +110,9 @@ h2.section-title{ font-size: clamp(2.1rem, 4.6vw, 3.6rem); max-width:16ch; }
 .nav-bar{
   display:flex; align-items:center; justify-content:space-between;
   max-width: var(--container); margin-inline:auto; padding-inline: clamp(1.25rem, 4vw, 3.5rem);
+  /* Fica acima do .nav-mobile (z-index 99), que e irmao dentro do header.
+     Sem isso o overlay cobre o logo e o botao X — e o menu nao fecha. */
+  position:relative; z-index:101;
 }
 .nav-logo{ pointer-events:auto; display:flex; align-items:center; gap:.6rem; }
 .nav-logo img{ height:38px; width:auto; }
@@ -148,10 +151,16 @@ h2.section-title{ font-size: clamp(2.1rem, 4.6vw, 3.6rem); max-width:16ch; }
 .nav-mobile{
   position:fixed; inset:0; z-index:99;
   background: rgba(5,5,5,.92); backdrop-filter: blur(30px);
-  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1.4rem;
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:1.4rem;
+  /* O .nav-wrap desliga pointer-events; o overlay precisa religar, senao os links nao clicam */
+  pointer-events:none;
+  /* Centraliza quando cabe, rola quando nao cabe (tela baixa / paisagem) */
+  overflow-y:auto; overscroll-behavior:contain;
   opacity:0; visibility:hidden; transition: opacity .5s var(--spring-soft), visibility .5s;
 }
-.nav-mobile.is-open{ opacity:1; visibility:visible; }
+.nav-mobile > :first-child{ margin-top:auto; }
+.nav-mobile > :last-child{ margin-bottom:auto; }
+.nav-mobile.is-open{ opacity:1; visibility:visible; pointer-events:auto; }
 .nav-mobile a{
   font-family: var(--font-display); font-size:2.2rem; font-weight:600; color: var(--text);
   translate: 0 32px; opacity:0; transition: translate .6s var(--spring), opacity .6s var(--spring);
@@ -165,7 +174,16 @@ h2.section-title{ font-size: clamp(2.1rem, 4.6vw, 3.6rem); max-width:16ch; }
 .nav-mobile.is-open a:nth-child(6){ transition-delay:.3s; }
 .nav-mobile.is-open a:nth-child(7){ transition-delay:.35s; }
 
+/* Ate 860px a nav inline some e o hamburguer assume; acima dela o hamburguer nao existe */
 @media (max-width: 860px){ .nav-links{ display:none; } }
+@media (min-width: 861px){ .nav-toggle{ display:none; } }
+
+/* Overlay aberto: o botao Contato da ilha sai de cena (o overlay ja tem o dele)
+   e sobra so o X, que fica por cima do overlay via z-index do .nav-wrap */
+body.nav-is-open .nav-island .btn-primary{ opacity:0; visibility:hidden; pointer-events:none; }
+body.nav-is-open .nav-island{ background:transparent; border-color:transparent; box-shadow:none; }
+body.nav-is-open .nav-island .nav-toggle{ background: rgba(255,255,255,.1); }
+body.nav-is-open .nav-island .nav-toggle span{ background:#fff; }
 
 /* ===== Ribbed noise texture (hero atmosphere) ===== */
 .ribbed{
@@ -493,8 +511,10 @@ h2.section-title{ font-size: clamp(2.1rem, 4.6vw, 3.6rem); max-width:16ch; }
   /* Respiro vertical menor — secao inteira cabe em menos rolagem */
   .section{ padding-block: clamp(3.4rem, 9vw, 4.6rem); }
   .section-tight{ padding-block: 2.6rem; }
-  .hero{ padding-top:5.5rem; min-height:auto; padding-bottom:4rem; }
-  .page-hero{ padding-top:7.6rem; padding-bottom:2.4rem; }
+  /* 7.5rem = 120px: a ilha da nav termina em ~84px, entao sobra folga real
+     em vez dos 4px que faziam o titulo encostar na barra */
+  .hero{ padding-top:7.5rem; min-height:auto; padding-bottom:4rem; }
+  .page-hero{ padding-top:8.6rem; padding-bottom:2.4rem; }
   .hero-foot{ margin-top:2.2rem; gap:1.2rem; }
 
   /* Cards com menos moldura, mais conteudo */

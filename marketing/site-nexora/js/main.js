@@ -2,19 +2,28 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navMobile = document.querySelector(".nav-mobile");
 if (navToggle && navMobile) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = navToggle.classList.toggle("is-open");
+  const setNav = (isOpen) => {
+    navToggle.classList.toggle("is-open", isOpen);
     navMobile.classList.toggle("is-open", isOpen);
+    document.body.classList.toggle("nav-is-open", isOpen);
     navToggle.setAttribute("aria-expanded", String(isOpen));
+    navToggle.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
     document.body.style.overflow = isOpen ? "hidden" : "";
+  };
+
+  navToggle.addEventListener("click", () => setNav(!navToggle.classList.contains("is-open")));
+  navMobile.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setNav(false)));
+
+  // Esc fecha, e voltar pro desktop nao pode deixar o overlay preso aberto
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navToggle.classList.contains("is-open")) {
+      setNav(false);
+      navToggle.focus();
+    }
   });
-  navMobile.querySelectorAll("a").forEach((a) =>
-    a.addEventListener("click", () => {
-      navToggle.classList.remove("is-open");
-      navMobile.classList.remove("is-open");
-      document.body.style.overflow = "";
-    })
-  );
+  window.matchMedia("(min-width: 861px)").addEventListener("change", (e) => {
+    if (e.matches) setNav(false);
+  });
 }
 
 // Revelar elementos ao entrar na tela
