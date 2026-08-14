@@ -9,7 +9,8 @@
 **Perfil:** Solopreneur / criador solo — Manoel toca tudo sozinho
 **Atende clientes:** Empresas de pequeno/médio porte que já têm marketing ok (postam com frequência no Instagram, bem avaliadas no Google, ticket um pouco maior), mas ainda não têm site, não rodam tráfego pago/SEO nem automação com IA. São empresas que já sabem que têm essa lacuna — não precisam ser convencidas do problema, só de quem resolve.
 **Equipe:** Só o Manoel, por enquanto
-**Ferramentas:** Claude Code (MazyOS), site de treino em https://website-alpha-rust-86.vercel.app (ainda não é o site definitivo da Nexora)
+**Ferramentas:** Claude Code (MazyOS), Vercel (hospedagem). Site oficial no ar em https://nexoramkt.com.br desde 14/08/2026 — código em `marketing/site-nexora/`, com blog, 4 páginas de serviço, política de privacidade e página 404
+**Contato público:** contato.nexoramkt@gmail.com e WhatsApp (15) 99246-8675
 **Principais entregas:** Landing pages e sites
 
 ## Contexto adicional

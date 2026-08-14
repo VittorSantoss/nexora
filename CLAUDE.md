@@ -50,8 +50,9 @@ convencidas do problema, só de quem resolve.
 
 Ainda no início — processo de briefing, entrega e prazos vai sendo
 definido conforme os primeiros projetos (de treino e depois pagos)
-acontecerem. Site de referência de estilo (treino, não definitivo):
-https://website-alpha-rust-86.vercel.app
+acontecerem. Site oficial da Nexora, no ar desde 14/08/2026:
+https://nexoramkt.com.br (fonte de estilo pras entregas — o código fica
+em `marketing/site-nexora/`)
 
 ## Tom de voz
 
