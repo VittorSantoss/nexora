@@ -12,11 +12,11 @@ Construção inicial. Manoel é leigo em Claude Code e ainda está pegando o jei
 
 Dois gargalos, nessa ordem:
 1. Construir mais alguns sites de treino pra conseguir entregar um site decente e confiável pro primeiro cliente pago
-2. Depois disso, resolver prospecção — hoje seria preciso buscar dezenas/centenas de leads, filtrar e mandar mensagem um por um pra talvez fechar um cliente
+2. Prospecção — já começou de verdade: levantamento de 26 leads qualificados em advocacia em Boituva (`marketing/prospeccao/advogados-boituva.md`, 15/08) e primeira proposta enviada (Dr. Alex Barbosa, Tier A, `propostas/alex-barbosa/`, 16/08)
 
 ## O que pode esperar
 
-Ampliar o portfólio de serviços (tráfego pago, SEO, automação com IA) — a Nexora já se posiciona como agência completa, mas isso só faz sentido depois que a entrega de sites estiver sólida.
+Ampliar o portfólio de serviços (tráfego pago, SEO, automação com IA) — já em andamento no site e no blog (10 artigos cobrindo os 4 serviços), mesmo sem venda ativa desses serviços ainda. A Nexora se posiciona como agência completa.
 
 ## Contexto com prazo
 

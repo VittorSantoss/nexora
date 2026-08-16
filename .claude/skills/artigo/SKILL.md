@@ -172,6 +172,62 @@ Artigos disponíveis hoje para linkar:
 **Schema JSON-LD:** `BlogPosting` sempre. Somar `FAQPage` quando houver FAQ (é o que faz
 o artigo aparecer expandido na busca e ser citado por ChatGPT/Gemini/Perplexity).
 
+---
+
+## Regra de ouro — o cluster fecha nos dois sentidos
+
+Link interno de artigo → página de serviço não é o suficiente. Isso é rua de mão única:
+quem cai direto na página de serviço (vindo de anúncio, busca ou link direto) nunca vê
+o artigo, e o Google enxerga uma conexão capenga em vez de um conjunto de páginas que
+domina o assunto de verdade.
+
+**Todo artigo novo precisa aparecer na página de serviço correspondente**, na seção
+"Pra aprofundar" (logo antes do CTA final). Duas situações:
+
+- **A seção já existe** (SEO, Sites, Tráfego, Automação já têm) → adicionar o card do
+  artigo novo, mantendo os melhores já lá. Se a seção usa `grid grid-3` e já tem três
+  cards de peso equivalente, avaliar se o artigo novo substitui um mais fraco ou se
+  vale subir pra `grid-4`.
+- **A seção não existe** (tema novo sem página de serviço direta, ou serviço com um
+  artigo só usando o card "Ver blog" de preenchimento) → criar a seção copiando o
+  bloco abaixo, ou trocar o card de preenchimento pelo artigo novo.
+
+```html
+<!-- ===== LEIA NO BLOG ===== -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: clamp(2rem,4vw,3rem);">
+      <h2 class="section-title">Pra aprofundar</h2>
+      <p class="section-sub">FRASE CURTA LIGANDO O TEMA AO SERVICO.</p>
+    </div>
+    <div class="grid grid-3">
+      <a href="blog-SLUG.html" class="bezel reveal">
+        <div class="bezel-inner post-card">
+          <div class="post-meta"><span>CATEGORIA</span><span class="dot"></span><span>N min</span></div>
+          <h3>TITULO DO ARTIGO</h3>
+          <p>CHAMADA DE 1-2 LINHAS.</p>
+          <span class="post-link">Ler artigo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+```
+
+Página de serviço por tema, pra saber onde mexer:
+
+| Tema do artigo | Página de serviço |
+|---|---|
+| SEO, Google, GMB | `servico-seo.html` |
+| Google Ads, Meta Ads, anúncio | `servico-trafego-pago.html` |
+| Site, landing page, prazo, preço de site | `servico-criacao-de-sites.html` |
+| Automação, chatbot, IA, atendimento | `servico-automacao-com-ia.html` |
+
+Isso vale mesmo quando o artigo é o primeiro daquele tema — um card sozinho (sem `grid`,
+com `style="max-width:420px"`) já fecha o ciclo melhor que nenhum.
+
 ### 5. COPYWRITER — o texto
 
 Escrever seguindo a espinha, bloco a bloco.
@@ -261,7 +317,8 @@ Se algum item falhar, voltar ao papel responsável e corrigir antes de seguir.
 1. Gravar `marketing/site-nexora/blog-<slug>.html`
 2. Adicionar o card em `marketing/site-nexora/blog.html` — **no topo do grid**, mais recente primeiro
 3. Adicionar a URL em `marketing/site-nexora/sitemap.xml` com `lastmod` de hoje e `priority` 0.8
-4. Apresentar o resumo de entrega (formato no fim deste arquivo)
+4. **Fechar o cluster na página de serviço correspondente** (ver regra de ouro abaixo) — sem isso o artigo fica em rua de mão única
+5. Apresentar o resumo de entrega (formato no fim deste arquivo)
 
 ---
 

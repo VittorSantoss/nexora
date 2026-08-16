@@ -77,6 +77,9 @@
 - [ ] Âncoras descritivas — nenhum "clique aqui" ou "saiba mais"
 - [ ] Bloco `.article-related` no fim do artigo
 - [ ] Todos os arquivos linkados **existem** de fato em `marketing/site-nexora/`
+- [ ] **O cluster fecha nos dois sentidos** — a página de serviço correspondente tem
+      um card linkando pra este artigo novo na seção "Pra aprofundar" (criar a seção
+      se ainda não existir nessa página)
 
 ## 8. Conversão
 
