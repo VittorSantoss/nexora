@@ -67,6 +67,16 @@ precisa deixar isso claro.
 
 ## Regras do sistema
 
+- **Artigo de blog → sempre usar a skill `/artigo`.** Qualquer pedido de
+  artigo, post ou texto pro blog da Nexora passa pela skill, mesmo que o
+  tema pareça simples. Ela tem a metodologia editorial completa (resposta
+  imediata, profundidade, tabelas, contrapontos, FAQ, cluster de links) e
+  entrega o HTML já linkado no `blog.html` e no `sitemap.xml`
+- **Prospecção de leads → sempre usar a skill `/prospectar`.** Qualquer
+  scrape do Google Maps colado no chat, pedido de "filtra esses leads",
+  "quem abordar" ou lista de prospecção passa pela skill. Nicho atual:
+  advocacia. Ela dedupa, corta institucional, classifica em tiers por
+  reputação × fraqueza digital e salva em `marketing/prospeccao/`
 - Cliente novo → criar pasta `clientes/<Nome>/` com `briefing.md`
 - Proposta enviada → `clientes/<Nome>/proposta.html` (ou pasta
   `propostas/` se ainda não fechou)

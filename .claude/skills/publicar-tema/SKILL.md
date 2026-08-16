@@ -45,7 +45,15 @@ Antes de escrever, ler o que tem nas pesquisas SEO sobre esse tema:
 
 ### Passo 2 — Escrever o blog post
 
+**Usar a skill `/artigo`** (`.claude/skills/artigo/SKILL.md`) — ela tem a metodologia
+editorial completa e entrega o HTML pronto no padrão do site da Nexora, já linkado
+no `blog.html` e no `sitemap.xml`. Não escrever o artigo por fora dela.
+
+O restante deste passo vale só pra sites de **cliente** com outro stack (Astro, WordPress),
+onde o destino muda.
+
 **Destino:** depende do stack do site. Padrões comuns:
+- Nexora: `marketing/site-nexora/blog-<slug>.html` (HTML estático, via `/artigo`)
 - Astro: `site/astro-site/src/content/blog/<slug>.md`
 - WordPress: gerar markdown que o usuário cola no editor
 - Outro: confirmar com o usuário

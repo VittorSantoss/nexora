@@ -1,0 +1,354 @@
+<meta charset="UTF-8">
+<title>Nexora — destaques do Instagram</title>
+<style>
+@font-face{font-family:"Clash";src:url("file:///c:/Users/kelvi/OneDrive/Desktop/treinamento/marketing/site-nexora/assets/fonts/clash-display-600.woff2") format("woff2");font-weight:600;}
+@font-face{font-family:"Clash";src:url("file:///c:/Users/kelvi/OneDrive/Desktop/treinamento/marketing/site-nexora/assets/fonts/clash-display-400.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"GS";src:url("file:///c:/Users/kelvi/OneDrive/Desktop/treinamento/marketing/site-nexora/assets/fonts/general-sans-400.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"GS";src:url("file:///c:/Users/kelvi/OneDrive/Desktop/treinamento/marketing/site-nexora/assets/fonts/general-sans-500.woff2") format("woff2");font-weight:500;}
+@font-face{font-family:"GS";src:url("file:///c:/Users/kelvi/OneDrive/Desktop/treinamento/marketing/site-nexora/assets/fonts/general-sans-600.woff2") format("woff2");font-weight:600;}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#222;}
+
+.panel{
+  position:relative; overflow:hidden; background:#050505; color:#f4f4f2;
+  font-family:"GS",system-ui,sans-serif; margin:24px auto; display:block;
+}
+/* story 9:16 */
+.st{width:1080px;height:1920px;}
+/* capa de destaque — o Instagram recorta em circulo */
+.cv{width:1080px;height:1080px;}
+
+/* grain */
+.panel::after{
+  content:""; position:absolute; inset:0; pointer-events:none; opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.glow{position:absolute;border-radius:50%;filter:blur(150px);pointer-events:none;}
+
+h1,h2,.display{font-family:"Clash",serif;font-weight:600;letter-spacing:-.02em;line-height:.98;}
+.grad{
+  background:linear-gradient(100deg,#8b5cf6,#6366f1,#3b82f6,#ec4899);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.rule{width:80px;height:3px;background:linear-gradient(90deg,#8b5cf6,#3b82f6);border-radius:2px;}
+
+/* ============ STORY ============ */
+/* padding vertical alto: topo some atras da barra de progresso,
+   base some atras da caixa de mensagem do Instagram */
+.st{padding:300px 96px 330px;display:flex;flex-direction:column;}
+.st .top{display:flex;align-items:center;justify-content:space-between;position:relative;}
+.st .top img{width:210px;}
+.st .num{font-size:24px;color:#67676f;letter-spacing:.22em;font-weight:600;}
+.st .body{position:relative;margin-top:auto;margin-bottom:auto;}
+.st .eyebrow{
+  font-size:22px;font-weight:600;text-transform:uppercase;letter-spacing:.26em;
+  color:#9d9da6;display:block;margin-bottom:34px;
+}
+.st h1{font-size:104px;max-width:12ch;}
+.st h2{font-size:88px;max-width:13ch;}
+.st p{font-size:34px;color:#9d9da6;line-height:1.5;margin-top:44px;max-width:27ch;}
+.st .foot{
+  position:relative;display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid rgba(255,255,255,.1);padding-top:36px;
+}
+.st .foot span{font-size:26px;color:#67676f;letter-spacing:.03em;}
+.st .foot .site{color:#f4f4f2;font-weight:600;}
+
+/* numeral gigante dos slides de servico */
+.st .bignum{
+  font-family:"Clash";font-weight:600;font-size:210px;line-height:.8;
+  color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.26);
+  display:block;margin-bottom:34px;
+}
+
+/* CTA */
+.st.cta{align-items:center;text-align:center;}
+/* align-items:center encolhe topo e rodape — devolver a largura cheia */
+.st.cta .top,.st.cta .foot{width:100%;}
+.st.cta .body{display:flex;flex-direction:column;align-items:center;}
+.st.cta p{max-width:22ch;}
+.st.cta .pill{
+  margin-top:64px;font-family:"GS";font-size:34px;font-weight:600;color:#050505;
+  background:#f4f4f2;padding:32px 66px;border-radius:999px;position:relative;
+}
+.st.cta .zap{margin-top:38px;font-size:28px;color:#9d9da6;letter-spacing:.02em;}
+
+/* ============ DESTAQUE SOBRE — um layout por tela ============ */
+
+/* 1. CAPA TIPOGRÁFICA — título ocupa a tela, selo circular como contraponto */
+#sobre-1 .body{margin-top:150px;margin-bottom:auto;}
+#sobre-1 h1{font-size:130px;max-width:10ch;letter-spacing:-.03em;}
+#sobre-1 .stamp{
+  position:absolute;right:92px;bottom:400px;width:260px;height:260px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.16);background:rgba(255,255,255,.035);
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  transform:rotate(-11deg);font-size:21px;font-weight:600;text-transform:uppercase;
+  letter-spacing:.2em;line-height:1.9;color:#9d9da6;
+}
+
+/* 2. PAINEL CLARO + LISTA — quebra o preto no meio do destaque */
+#sobre-2{background:#f4f4f2;color:#050505;}
+#sobre-2::after{opacity:.035;}
+#sobre-2 .body{margin-top:130px;margin-bottom:auto;}
+#sobre-2 h2{font-size:96px;max-width:11ch;}
+#sobre-2 ul{list-style:none;margin-top:76px;border-top:1px solid rgba(5,5,5,.14);}
+#sobre-2 li{
+  font-size:40px;font-weight:500;color:#050505;padding:32px 4px;
+  border-bottom:1px solid rgba(5,5,5,.14);display:flex;gap:28px;align-items:baseline;
+}
+#sobre-2 li span{font-family:"Clash";font-weight:600;font-size:26px;color:#6366f1;width:56px;flex:none;}
+#sobre-2 .close{font-size:34px;color:#55555e;line-height:1.5;margin-top:48px;max-width:26ch;}
+#sobre-2 .foot{border-top:1px solid rgba(5,5,5,.14);}
+#sobre-2 .foot span{color:#67676f;}
+#sobre-2 .foot .site{color:#050505;}
+.lock{display:flex;align-items:center;gap:18px;}
+.lock span{font-size:30px;font-weight:600;letter-spacing:.28em;color:#050505;}
+
+/* 3. NUMERAL — algarismo gigante como fundo gráfico, texto por cima */
+#sobre-3 .body{margin-top:auto;margin-bottom:auto;}
+#sobre-3 .ghost{
+  position:absolute;right:96px;top:470px;font-family:"Clash";font-weight:600;
+  font-size:540px;line-height:.8;color:transparent;
+  -webkit-text-stroke:3px rgba(255,255,255,.14);pointer-events:none;
+}
+#sobre-3 h2{font-size:92px;max-width:11ch;}
+#sobre-3 .caption{
+  margin-top:52px;font-size:26px;text-transform:uppercase;letter-spacing:.22em;
+  font-weight:600;color:#8b5cf6;
+}
+
+/* 4. CITAÇÃO — aspa em marca d'água, frase em Clash, assinatura */
+#sobre-4 .body{margin-top:auto;margin-bottom:60px;}
+#sobre-4 .qmark{
+  position:absolute;left:70px;top:800px;font-family:"Clash";font-weight:600;
+  font-size:400px;line-height:.7;color:rgba(255,255,255,.07);pointer-events:none;
+}
+#sobre-4 blockquote{
+  font-family:"Clash";font-weight:600;font-size:80px;line-height:1.06;
+  letter-spacing:-.02em;max-width:15ch;position:relative;
+}
+#sobre-4 .by{margin-top:60px;display:flex;align-items:center;gap:22px;position:relative;}
+#sobre-4 .by .dash{width:52px;height:2px;background:rgba(255,255,255,.3);}
+#sobre-4 .by p{margin:0;font-size:28px;color:#9d9da6;max-width:none;}
+#sobre-4 .by b{color:#f4f4f2;font-weight:600;}
+
+/* 5. CARTÃO DE CONTATO — CTA em bloco, não centralizado (o de serviços já é) */
+#sobre-5 .body{margin-top:auto;margin-bottom:auto;}
+#sobre-5 h2{font-size:92px;max-width:12ch;}
+#sobre-5 .card{
+  margin-top:64px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.035);
+  border-radius:40px;padding:52px 56px;position:relative;
+}
+#sobre-5 .row{display:flex;align-items:center;justify-content:space-between;padding:26px 0;}
+#sobre-5 .row + .row{border-top:1px solid rgba(255,255,255,.1);}
+#sobre-5 .row .k{font-size:23px;text-transform:uppercase;letter-spacing:.22em;color:#67676f;font-weight:600;}
+#sobre-5 .row .v{font-size:38px;font-weight:600;color:#f4f4f2;}
+#sobre-5 .note{margin-top:44px;font-size:30px;color:#9d9da6;max-width:30ch;}
+
+/* ============ CAPA DE DESTAQUE ============ */
+/* tudo dentro do circulo central (raio ~430px) pra sobreviver ao crop */
+.cv{display:flex;align-items:center;justify-content:center;}
+.cv .glow{width:900px;height:900px;left:90px;top:90px;}
+.cv .mark{position:relative;display:flex;align-items:center;justify-content:center;}
+.cv .mono{font-family:"Clash";font-weight:600;font-size:430px;line-height:1;color:#f4f4f2;letter-spacing:-.04em;}
+.cv svg{display:block;}
+/* guia de crop — some no render (screenshot do elemento .cv com a guia oculta) */
+</style>
+
+<!-- ==================== CAPAS ==================== -->
+
+<!-- capa 1 — SOBRE (monograma) -->
+<div class="panel cv" id="capa-sobre">
+  <div class="glow" style="background:radial-gradient(circle,rgba(139,92,246,.42),transparent 62%)"></div>
+  <div class="mark">
+    <!-- monograma: hastes off-white + diagonal no gradiente da marca (eco do logo) -->
+    <svg width="400" height="400" viewBox="0 0 100 100" fill="none">
+      <polygon points="31,10 49,10 69,90 51,90" fill="url(#gn)"/>
+      <rect x="14" y="10" width="17" height="80" rx="2" fill="#f4f4f2"/>
+      <rect x="69" y="10" width="17" height="80" rx="2" fill="#f4f4f2"/>
+      <defs>
+        <linearGradient id="gn" x1="31" y1="10" x2="69" y2="90" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#8b5cf6"/><stop offset=".5" stop-color="#3b82f6"/><stop offset="1" stop-color="#ec4899"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</div>
+
+<!-- capa 2 — SERVICOS (quatro frentes) -->
+<div class="panel cv" id="capa-servicos">
+  <div class="glow" style="background:radial-gradient(circle,rgba(59,130,246,.38),transparent 62%)"></div>
+  <div class="mark">
+    <svg width="380" height="380" viewBox="0 0 100 100" fill="none">
+      <rect x="8"  y="8"  width="36" height="36" rx="9" stroke="#f4f4f2" stroke-width="4"/>
+      <rect x="56" y="8"  width="36" height="36" rx="9" stroke="#f4f4f2" stroke-width="4"/>
+      <rect x="8"  y="56" width="36" height="36" rx="9" stroke="#f4f4f2" stroke-width="4"/>
+      <rect x="56" y="56" width="36" height="36" rx="9" fill="url(#g)"/>
+      <defs>
+        <linearGradient id="g" x1="56" y1="56" x2="92" y2="92" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#8b5cf6"/><stop offset=".5" stop-color="#3b82f6"/><stop offset="1" stop-color="#ec4899"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</div>
+
+<!-- ==================== DESTAQUE: SOBRE ==================== -->
+
+<!-- 1 — capa tipográfica -->
+<div class="panel st" id="sobre-1">
+  <div class="glow" style="width:1040px;height:1040px;background:radial-gradient(circle,rgba(139,92,246,.32),transparent 64%);right:-280px;top:-220px"></div>
+  <div class="top"><img src="logo-alpha.png" alt="Nexora"><span class="num">01</span></div>
+  <div class="body">
+    <h1>Empresa boa perdendo cliente pra concorrente <span class="grad">pior</span>.</h1>
+  </div>
+  <div class="stamp">Não é<br>falta de<br>qualidade</div>
+  <div class="foot"><span>Sobre a Nexora</span><span class="site">nexoramkt.com.br</span></div>
+</div>
+
+<!-- 2 — painel claro com lista -->
+<div class="panel st" id="sobre-2">
+  <div class="top">
+    <div class="lock">
+      <svg width="54" height="54" viewBox="0 0 100 100" fill="none">
+        <polygon points="31,10 49,10 69,90 51,90" fill="url(#gl)"/>
+        <rect x="14" y="10" width="17" height="80" rx="2" fill="#050505"/>
+        <rect x="69" y="10" width="17" height="80" rx="2" fill="#050505"/>
+        <defs><linearGradient id="gl" x1="31" y1="10" x2="69" y2="90" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#8b5cf6"/><stop offset=".5" stop-color="#3b82f6"/><stop offset="1" stop-color="#ec4899"/>
+        </linearGradient></defs>
+      </svg>
+      <span>NEXORA</span>
+    </div>
+    <span class="num" style="color:#8a8a92">02</span>
+  </div>
+  <div class="body">
+    <h2>Não é falta de qualidade. É falta de estrutura.</h2>
+    <ul>
+      <li><span>01</span>O concorrente tem site.</li>
+      <li><span>02</span>Aparece no Google.</li>
+      <li><span>03</span>Responde mais rápido.</li>
+    </ul>
+    <p class="close">Só isso. E é exatamente essa parte que a Nexora resolve.</p>
+  </div>
+  <div class="foot"><span>Sites • Tráfego • SEO • IA</span><span class="site">nexoramkt.com.br</span></div>
+</div>
+
+<!-- 3 — numeral gigante como fundo -->
+<div class="panel st" id="sobre-3">
+  <div class="glow" style="width:980px;height:980px;background:radial-gradient(circle,rgba(59,130,246,.24),transparent 64%);right:-320px;bottom:-260px"></div>
+  <div class="ghost">1</div>
+  <div class="top"><img src="logo-alpha.png" alt="Nexora"><span class="num">03</span></div>
+  <div class="body">
+    <h2>Quem fala com você é quem <span class="grad">faz</span>.</h2>
+    <div class="caption">Uma pessoa, do começo ao fim</div>
+    <p>Sem gerente de conta, sem “vou verificar com a equipe”. Você manda mensagem e cai direto em quem está com a mão no seu projeto.</p>
+  </div>
+  <div class="foot"><span>Atendimento direto</span><span class="site">nexoramkt.com.br</span></div>
+</div>
+
+<!-- 4 — citação -->
+<div class="panel st" id="sobre-4">
+  <div class="glow" style="width:1000px;height:1000px;background:radial-gradient(circle,rgba(236,72,153,.15),transparent 64%);left:-300px;top:-180px"></div>
+  <div class="qmark">“</div>
+  <div class="top"><img src="logo-alpha.png" alt="Nexora"><span class="num">04</span></div>
+  <div class="body">
+    <blockquote>A Nexora é nova. E não vai fingir vinte anos de mercado que não existem.</blockquote>
+    <div class="by">
+      <div class="dash"></div>
+      <p><b>Manoel Vitor</b> — fundador</p>
+    </div>
+  </div>
+  <div class="foot"><span>Atenção que agência grande não dá</span><span class="site">nexoramkt.com.br</span></div>
+</div>
+
+<!-- 5 — cartão de contato -->
+<div class="panel st" id="sobre-5">
+  <div class="glow" style="width:1040px;height:1040px;background:radial-gradient(circle,rgba(139,92,246,.3),transparent 62%);left:-200px;bottom:-200px"></div>
+  <div class="top"><img src="logo-alpha.png" alt="Nexora"><span class="num">05</span></div>
+  <div class="body">
+    <h2>Me conta o que seu negócio precisa.</h2>
+    <div class="card">
+      <div class="row"><span class="k">WhatsApp</span><span class="v">15 99246-8675</span></div>
+      <div class="row"><span class="k">Site</span><span class="v">nexoramkt.com.br</span></div>
+    </div>
+    <p class="note">Orçamento sem compromisso — e se não fizer sentido pro seu momento, eu digo isso antes de mandar proposta.</p>
+  </div>
+  <div class="foot"><span>Sorocaba — SP</span><span class="site">@nexoramkt.agencia</span></div>
+</div>
+
+<!-- ==================== DESTAQUE: SERVIÇOS ==================== -->
+
+<div class="panel st" id="serv-1">
+  <div class="glow" style="width:1000px;height:1000px;background:radial-gradient(circle,rgba(59,130,246,.3),transparent 64%);right:-280px;top:-200px"></div>
+  <div class="top"><img src="logo-alpha.png" alt="Nexora"><span class="num">01</span></div>
+  <div class="body">
+    <span class="eyebrow">O que a gente faz</span>
+    <div class="rule"></div>
+    <h1 style="margin-top:36px">Quatro frentes, um objetivo: mais <span class="grad">cliente</span> chegando.</h1>
+    <p>Site, tráfego pago, SEO e automação — sob o mesmo teto.</p>
+  </div>
+  <div class="foot"><span>Sorocaba — SP</span><span class="site">nexoramkt.com.br</span></div>
+</div>
+
+<div class="panel st" id="serv-2">
+  <div class="glow" style="width:960px;height:960px;background:radial-gradient(circle,rgba(139,92,246,.28),transparent 64%);left:-300px;bottom:-240px"></div>
+  <div class="top"><img src="logo-alpha.png" alt="Nexora"><span class="num">02</span></div>
+  <div class="body">
+    <span class="bignum">01</span>
+    <span class="eyebrow">Criação de sites</span>
+    <h2>Não é cartão de visita. É vendedor 24 horas por dia.</h2>
+    <p>Site e landing page feitos pra transformar visita em conversa no WhatsApp.</p>
+  </div>
+  <div class="foot"><span>Site • Landing page</span><span class="site">nexoramkt.com.br</span></div>
+</div>
+
+<div class="panel st" id="serv-3">
+  <div class="glow" style="width:960px;height:960px;background:radial-gradient(circle,rgba(59,130,246,.28),transparent 64%);right:-300px;bottom:-240px"></div>
+  <div class="top"><img src="logo-alpha.png" alt="Nexora"><span class="num">03</span></div>
+  <div class="body">
+    <span class="bignum">02</span>
+    <span class="eyebrow">Tráfego pago</span>
+    <h2>Verba sob controle, não jogada no escuro.</h2>
+    <p>Google e Meta Ads com segmentação e acompanhamento — você vê pra onde cada real foi.</p>
+  </div>
+  <div class="foot"><span>Google Ads • Meta Ads</span><span class="site">nexoramkt.com.br</span></div>
+</div>
+
+<div class="panel st" id="serv-4">
+  <div class="glow" style="width:960px;height:960px;background:radial-gradient(circle,rgba(139,92,246,.26),transparent 64%);left:-300px;top:-200px"></div>
+  <div class="top"><img src="logo-alpha.png" alt="Nexora"><span class="num">04</span></div>
+  <div class="body">
+    <span class="bignum">03</span>
+    <span class="eyebrow">SEO</span>
+    <h2>Apareça pra quem já está te procurando.</h2>
+    <p>Tem gente buscando seu serviço no Google hoje e achando o concorrente. Dá pra mudar isso.</p>
+  </div>
+  <div class="foot"><span>Google • Perfil da empresa</span><span class="site">nexoramkt.com.br</span></div>
+</div>
+
+<div class="panel st" id="serv-5">
+  <div class="glow" style="width:960px;height:960px;background:radial-gradient(circle,rgba(236,72,153,.18),transparent 64%);right:-300px;top:-200px"></div>
+  <div class="top"><img src="logo-alpha.png" alt="Nexora"><span class="num">05</span></div>
+  <div class="body">
+    <span class="bignum">04</span>
+    <span class="eyebrow">Automação com IA</span>
+    <h2>Lead respondido na hora, não daqui a duas horas.</h2>
+    <p>Quem responde primeiro leva o cliente. A automação atende, qualifica e te entrega a conversa pronta.</p>
+  </div>
+  <div class="foot"><span>Atendimento automático</span><span class="site">nexoramkt.com.br</span></div>
+</div>
+
+<div class="panel st cta" id="serv-6">
+  <div class="glow" style="width:1000px;height:1000px;background:radial-gradient(circle,rgba(59,130,246,.32),transparent 62%);left:40px;top:340px"></div>
+  <div class="top"><img src="logo-alpha.png" alt="Nexora"><span class="num">06</span></div>
+  <div class="body">
+    <h2>Não sabe por onde começar?</h2>
+    <p>Me chama que eu te digo o que faz sentido pro seu momento — mesmo que não seja contratar agora.</p>
+    <div class="pill">15 99246-8675</div>
+    <div class="zap">nexoramkt.com.br</div>
+  </div>
+  <div class="foot"><span>Orçamento sem compromisso</span><span class="site">@nexoramkt.agencia</span></div>
+</div>

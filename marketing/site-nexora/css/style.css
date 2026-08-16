@@ -564,6 +564,87 @@ body.nav-is-open .nav-island .nav-toggle span{ background:#fff; }
   html{ scroll-behavior:auto; }
 }
 
+/* ===== Blocos editoriais do blog ===== */
+
+/* Resposta direta — primeiro bloco do artigo, responde a busca de cara */
+.answer-box{
+  position:relative; margin: 0 0 2.4rem; padding: clamp(1.4rem,3vw,1.9rem);
+  background: var(--surface); border:1px solid var(--hairline); border-radius: var(--radius);
+  overflow:hidden;
+}
+.answer-box::before{
+  content:""; position:absolute; inset:0 auto 0 0; width:2px; background: var(--gradient-brand);
+}
+.answer-box .answer-label{
+  display:block; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--text-faint); margin-bottom:.85rem;
+}
+.answer-box p{ color:var(--text); font-size:1.06rem; margin-bottom:1rem; }
+.answer-box p:last-child{ margin-bottom:0; }
+.answer-box strong{ color:var(--text); font-weight:600; }
+
+/* Tabela — rola sozinha no mobile, nunca estoura a pagina */
+.table-wrap{ overflow-x:auto; margin: 2rem 0 1.2rem; -webkit-overflow-scrolling:touch; }
+.article table{
+  width:100%; min-width:520px; border-collapse:collapse; font-size:.95rem;
+}
+.article table th{
+  text-align:left; font-family:var(--font-display); font-weight:600; font-size:.82rem;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--text-faint);
+  padding:.85rem 1rem; border-bottom:1px solid var(--hairline-strong); white-space:nowrap;
+}
+.article table td{
+  padding:.95rem 1rem; color:var(--text-dim); border-bottom:1px solid var(--hairline);
+  vertical-align:top;
+}
+.article table tr:last-child td{ border-bottom:none; }
+.article table td:first-child{ color:var(--text); font-weight:500; }
+
+/* Ressalva — dado que e estimativa, nao verdade absoluta */
+.article-note{
+  font-size:.88rem; color:var(--text-faint); line-height:1.6;
+  padding-left:1rem; border-left:1px solid var(--hairline); margin: 0 0 2.4rem;
+}
+
+/* Simulacao / conta na ponta do lapis */
+.article-calc{
+  background: var(--bg-soft); border:1px solid var(--hairline); border-radius: var(--radius);
+  padding: clamp(1.4rem,3vw,1.9rem); margin: 2.2rem 0;
+}
+.article-calc h4{ font-size:1.02rem; margin-bottom:1.1rem; }
+.article-calc .calc-row{
+  display:flex; justify-content:space-between; gap:1.2rem; padding:.6rem 0;
+  border-bottom:1px solid var(--hairline); font-size:.96rem; color:var(--text-dim);
+}
+.article-calc .calc-row span:last-child{ color:var(--text); font-weight:600; white-space:nowrap; }
+.article-calc .calc-row.total{ border-bottom:none; border-top:1px solid var(--hairline-strong); margin-top:.5rem; padding-top:.9rem; }
+.article-calc .calc-row.total span{ color:var(--text); font-family:var(--font-display); font-size:1.08rem; }
+
+/* Leia tambem — links internos no fim do artigo */
+.article-related{
+  margin-top: 3rem; padding-top:1.8rem; border-top:1px solid var(--hairline);
+}
+.article-related h4{
+  font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; color:var(--text-faint);
+  margin-bottom:1.1rem;
+}
+.article-related a{
+  display:block; padding:.7rem 0; color:var(--text-dim); font-size:.98rem;
+  border-bottom:1px solid var(--hairline); transition: color .3s var(--spring-soft);
+}
+.article-related a:last-child{ border-bottom:none; }
+.article-related a:hover{ color:var(--text); }
+
+/* FAQ dentro do artigo */
+.article .faq-list{ margin: 2rem 0 1rem; }
+
+@media (max-width:560px){
+  .answer-box p{ font-size:1rem; }
+  .article table{ font-size:.9rem; min-width:460px; }
+  .article table th, .article table td{ padding:.75rem .8rem; }
+  .article-calc .calc-row{ font-size:.9rem; }
+}
+
 /* ===== Garantia — nota discreta abaixo dos planos ===== */
 .guarantee{
   display:flex; align-items:flex-start; justify-content:center; gap:.75rem;

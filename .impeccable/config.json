@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "marketing/site-nexora/css/style.css"
+        ],
+        "createdAt": "2026-08-15T11:15:11.900Z",
+        "reason": "Classe .accent e decisao de marca documentada em identidade/design-guide.md: gradiente roxo-indigo-azul reservado a uma palavra de destaque por secao. Codigo pre-existente, nao introduzido nesta edicao."
+      }
+    ]
+  }
+}
