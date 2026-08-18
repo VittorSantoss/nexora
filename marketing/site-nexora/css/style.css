@@ -357,8 +357,7 @@ body.nav-is-open .nav-island .nav-toggle span{ background:#fff; }
 }
 .price-card:hover::before{ opacity:1; }
 .price-card .price-tag{ font-size:.8rem; color: var(--text-faint); text-transform:uppercase; letter-spacing:.08em; }
-.price-card .price-value{ font-family: var(--font-display); font-weight:600; font-size: clamp(2.2rem, 3.6vw, 2.8rem); margin: .8rem 0 1.6rem; display:flex; align-items:baseline; gap:.4rem; }
-.price-card .price-value small{ font-family: var(--font-body); font-size:.9rem; font-weight:500; color: var(--text-dim); }
+.price-card h3{ font-family: var(--font-display); font-weight:600; font-size:1.3rem; margin:.6rem 0 1.6rem; }
 .price-card ul{ display:flex; flex-direction:column; gap:.8rem; margin-bottom:2rem; flex-grow:1; }
 .price-card li{ display:flex; align-items:flex-start; gap:.7rem; font-size:.92rem; color: var(--text-dim); }
 .price-card li svg{ width:15px; height:15px; flex-shrink:0; margin-top:.15rem; color: var(--purple); }
