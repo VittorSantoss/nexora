@@ -1,8 +1,8 @@
 # Prospecção — Advocacia em Boituva/SP
 
-**Fonte:** scrape do Google Maps (perfis GMN) · **Data:** 15/08/2026
+**Fonte:** scrape do Google Maps (perfis GMN) · **Datas:** 15/08/2026 e 17/08/2026 (2ª leva)
 **Critério:** nota alta + volume de avaliação relevante + site fraco ou inexistente
-**Total bruto:** ~60 perfis · **Qualificados:** 26
+**Total bruto:** ~150 perfis (2 scrapes, com sobreposição) · **Qualificados:** 30
 
 ---
 
@@ -43,6 +43,7 @@ Mesma lógica do Tier A, com menos prova social. Bons pra segunda leva.
 | Vera Sonego | 5,0 | 4 | (15) 99749-2447 | Sem site |
 | Fernandes \| Mioni Sociedade de Advogados | 4,5 | 4 | (15) 3268-1778 | Sem site |
 | Gianotti & Francisco Advogados | 5,0 | 3 | (15) 3268-7112 | Sem site |
+| Anderson Luiz Candido — Advocacia Candido | 5,0 | 3 | (15) 99664-0678 | Sem site |
 
 ---
 
@@ -57,10 +58,14 @@ Argumento mais difícil, ticket parecido.
 | Vaccari Advocacia | 4,6 | 10 | (11) 98536-3919 | vaccariadvocacia.com.br/lp-aut/ | Só uma LP de campanha, sem site |
 | Chagas Garcia Advocacia | 5,0 | 3 | (15) 99633-4628 | chagasgarcia-advprev.lovable.app | Subdomínio de plataforma grátis |
 | Jorge Brancaccio Advocacia | 5,0 | 1 | (15) 3263-2547 | feebrn5.wixsite.com | Subdomínio Wix genérico |
+| Edilene Souza Bentivoglio Sociedade Individual de Advocacia | 5,0 | 37 | (15) 99104-0507 | edilenesouzabentivogliosociedadeindividualdeadvocacia.jusfy.com.br | Subdomínio de plataforma pronta pra advogado (Jusfy) |
+| Dra. Ligia Santos Advogada Cível e Previdenciária | 5,0 | 25 | (15) 99801-6209 | ligiasantosadvocacia.my.canva.site | Subdomínio Canva Site — atende Iperó, cidade vizinha, confirmar se cobre Boituva |
 
 **Destaque:** Ramos & Domingues tem 60 avaliações 5,0 — o melhor perfil da
-lista inteira depois do Alex Barbosa — com site em HTTP. Vale conferir ao vivo
-antes de abordar.
+lista inteira depois do Alex Barbosa — com site em HTTP. Edilene Souza
+Bentivoglio vem logo atrás, com 37 avaliações e site preso num subdomínio de
+plataforma pronta (Jusfy) — mesmo argumento, prova social forte. Vale conferir
+os dois ao vivo antes de abordar.
 
 ---
 
@@ -72,6 +77,7 @@ clique não é um site próprio.
 |---|---|---|---|---|
 | Dra. Lilian Franci Advocacia | 5,0 | 1 | (15) 99693-1343 | Anúncio Google; fora de Boituva, anuncia pra cá |
 | Borges Gonzalez Advocacia Empresarial | 5,0 | 6 | (15) 99684-9459 | Anúncio Google; fora de Boituva, anuncia pra cá |
+| Advocacia Burani | 5,0 | 40 | (15) 99837-6386 | Anúncio Google; nenhum site próprio cadastrado no GMN |
 
 **Por que interessa:** quem paga tráfego já entendeu que precisa de cliente
 novo. Falta o lugar pra onde mandar o clique.
@@ -81,13 +87,38 @@ novo. Falta o lugar pra onde mandar o clique.
 ## Descartados
 
 - **Institucional:** OAB Secção SP (2 perfis), CAASP (2 perfis)
-- **Fora do serviço:** CARTAC Cobranças, Assessoria Fiscal Contábil Modelo
+- **Fora do serviço:** CARTAC Cobranças, Assessoria Fiscal Contábil Modelo,
+  Vieira Isenções (assessoria de isenção PCD/taxista, não é advocacia)
 - **Sem avaliação nenhuma:** Jonas Pascoli, Nogueira & Valões, Cattini Chaves,
   Parise & Trevizano, Luiz Lozzano, Bazoli Advocacia, Bergamin Advogados,
   "A D V O C A C I A", BR Recursos, Badaró e De Luca, "Escritório de
-  Advocacia", LN Advocacia, Evelyn Santos
+  Advocacia", LN Advocacia, Evelyn Santos, Jislãna Marques, Fabiano Amorim,
+  Camargo | Correa, Simone Landuci, Advocacia Cássio Messias, Advocacia Zara,
+  Lira Mendes Rosa & Teixeira
+- **Avaliação insuficiente (1–2, abaixo do corte de 3):** João Freitas (1),
+  Araium & Walkinir (1), Vinícius Evangelista (1), Bíscaro Advocacia (1),
+  Leonardo Goes (2), Alessandra Antunes (2, sem telefone), Daiane Marigo (2),
+  Almeida e Rocha (1, sem telefone), Dra. Ericles Virgínia (1), ELN — Dra.
+  Neyde Nascimento (1)
 - **Já têm site decente:** Pedro Santos, Thiago Perusse, Caique Leme, Roberta
-  Martins Lima, Cancian, Agostinho e Agostinho, Advocacia Calza, CFB Advocacia
+  Martins Lima, Cancian, Agostinho e Agostinho, Advocacia Calza, CFB Advocacia,
+  Dr. Felipe Alves Carvalho Souza (felipealvesadvogadoboituva.com), Chaves
+  Sartorelli Advocacia Criminal (chavesartorelli.com.br) — os dois últimos com
+  domínio próprio e HTTPS; ainda vale abrir ao vivo antes de descartar de vez
+
+---
+
+## ⚠️ Verificar antes de abordar: Dr. Oscar M. Vieira (Tier A)
+
+O 2º scrape trouxe **"Vieira & Marques Sociedade de Advogados" — 5,0, 168
+avaliações**, o maior volume de toda a lista, com o mesmo telefone cadastrado
+do Dr. Oscar M. Vieira: (15) 99150-3080. Outro perfil do mesmo scrape
+("Jislãna Marques") aponta o site `vieiraemarquesadvogados.com` como sendo
+dessa mesma sociedade. Ou seja: o Oscar Vieira que está no Tier A como "sem
+site" pode na verdade ser sócio de um escritório que **já tem site** sob outro
+nome fantasia. Confirmar isso antes de abordar — se for o mesmo escritório,
+ele sai do Tier A e a entrada vira "já tem site" ou Tier C, dependendo da
+qualidade do site.
 
 ---
 

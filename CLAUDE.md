@@ -33,10 +33,23 @@ ganhar ritmo.
 
 ## Clientes ativos
 
-Nenhum cliente pago ainda. Fase atual é de treino: construir mais
-alguns sites pra pegar o jeito antes de vender pra valer. O
-`/atualizar` mantém isso sincronizado com as pastas em `clientes/`
-assim que o primeiro cliente entrar.
+**Jeniffer Almeida** — instrutora de unhas em Boituva/SP (Manicure Russa +
+Curso VIP Manicure Combinada). Primeira pasta real em `clientes/`. Site
+completo em construção (hub + LP de atendimento + LP do curso) pra
+substituir o Linktree fraco dela — ver `clientes/Jeniffer-Almeida/briefing.md`.
+Status de pagamento ainda não confirmado.
+
+**Dra. Elisângela Paz** — advogada trabalhista/família/cível em Boituva/SP.
+Fechou na reunião de 19/08: escopo travado por escrito em
+`propostas/elisangela-paz/prestacao-servico.html` (LP + blog, 3 artigos
+publicados na entrega, R$500). Primeira cliente paga da Nexora — status de
+pagamento (entrada/total) ainda não confirmado. Falta migrar
+`propostas/elisangela-paz/` pra `clientes/Elisangela-Paz/` e criar o
+`briefing.md` de lá.
+
+Fora essas duas, nenhum cliente pago confirmado ainda. Fase segue de treino:
+construir mais alguns sites pra pegar o jeito antes de vender pra valer. O
+`/atualizar` mantém isso sincronizado com as pastas em `clientes/`.
 
 ## Perfil de cliente
 
@@ -67,6 +80,20 @@ precisa deixar isso claro.
 
 ## Regras do sistema
 
+- **Demonstração de site → sempre usar `referencias/modelo-demonstracao-lp.html` como
+  esqueleto.** Qualquer pedido de "faz uma demonstração de site" (uso em
+  prospecção, antes de fechar) segue a mesma estrutura, seções e fluxo de
+  copy desse modelo (base: demo da Dra. Elisângela Paz). Só muda a
+  identidade visual (nunca a dark da Nexora) e as informações do cliente.
+  Diferente da skill `/site-cliente`, que monta o site completo pro
+  cliente já fechado (hub + LP por serviço) — o modelo aqui é só pra
+  demo de venda, página única.
+- **Blog (demo ou de cliente) → sempre lista + página HTML separada por
+  artigo.** A página do blog (`blog.html`) é só hero + grade de cards
+  linkando pra fora; nunca embutir o corpo dos artigos na mesma página com
+  âncoras. Cada artigo é um arquivo próprio (mesmo padrão do blog da
+  própria Nexora em `marketing/site-nexora/blog-*.html`), com cabeçalho,
+  corpo, CTA e "leia também" linkando os outros artigos.
 - **Artigo de blog → sempre usar a skill `/artigo`.** Qualquer pedido de
   artigo, post ou texto pro blog da Nexora passa pela skill, mesmo que o
   tema pareça simples. Ela tem a metodologia editorial completa (resposta
@@ -77,6 +104,11 @@ precisa deixar isso claro.
   "quem abordar" ou lista de prospecção passa pela skill. Nicho atual:
   advocacia. Ela dedupa, corta institucional, classifica em tiers por
   reputação × fraqueza digital e salva em `marketing/prospeccao/`
+- **Site novo pra cliente → sempre usar a skill `/site-cliente`.** Qualquer
+  "monta o site da/do <cliente>", "cria uma LP pra ela/ele" ou material
+  bruto (print do Google, Instagram, PDF de venda) pedindo site passa pela
+  skill. Ela monta hub + LP por serviço, com identidade visual exclusiva do
+  cliente — nunca a identidade dark da Nexora
 - Cliente novo → criar pasta `clientes/<Nome>/` com `briefing.md`
 - Proposta enviada → `clientes/<Nome>/proposta.html` (ou pasta
   `propostas/` se ainda não fechou)

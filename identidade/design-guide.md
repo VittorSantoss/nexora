@@ -62,4 +62,4 @@ Usar o gradiente da marca em áreas grandes (só em palavras/detalhes pontuais).
 
 ## Observações adicionais
 
-Referência viva do estilo: https://website-alpha-rust-86.vercel.app (site de treino, ainda não é o site definitivo da Nexora, mas a identidade visual e o tom de voz já são os da marca).
+Referência viva do estilo: https://nexoramkt.com.br (site oficial da Nexora, no ar desde 14/08/2026 — fonte definitiva de identidade visual e tom de voz; código em `marketing/site-nexora/`).
