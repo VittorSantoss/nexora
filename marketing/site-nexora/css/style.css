@@ -249,6 +249,8 @@ body.nav-is-open .nav-island .nav-toggle span{ background:#fff; }
   padding: clamp(1.8rem, 3vw, 2.6rem);
   height:100%;
 }
+.bezel-inner.photo-frame{ padding:0; overflow:hidden; }
+.founder-photo{ width:100%; height:100%; aspect-ratio:4/5; object-fit:cover; display:block; }
 
 .grid{ display:grid; gap: clamp(1.5rem, 3vw, 2rem); }
 .grid-2{ grid-template-columns: repeat(2, 1fr); }

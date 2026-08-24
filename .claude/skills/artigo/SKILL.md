@@ -66,6 +66,104 @@ Cada seção abaixo do pipeline existe para produzir um desses blocos.
 
 ---
 
+## Estratégia de clusters de conteúdo
+
+Artigo nenhum nasce solto. Todo artigo pertence a um **cluster temático** — uma rede de
+conteúdo pilar + conteúdos satélites que, juntos, mostram pro Google (e pro leitor) que a
+Nexora domina aquele assunto de verdade, não só escreveu um post avulso sobre ele.
+
+**Pilar** — o artigo mais abrangente sobre um tema, geralmente o "o que não pode faltar"
+ou "tudo sobre X" do nicho. Ex.: `blog-site-para-advogado.html`.
+
+**Satélite** — artigo específico que aprofunda UMA dúvida, objeção ou intenção de busca
+dentro do mesmo tema. Ex.: "quanto custa um site para advogado?", "advogado precisa ter
+site?", "SEO para advogados: como funciona?".
+
+```
+                    ┌──────────────────────────┐
+                    │   PILAR: Site para X      │
+                    └──────────────────────────┘
+                       ↑         ↑         ↑
+                  satélite   satélite   satélite
+                  (custo)   (precisa)  (SEO local)
+```
+
+Satélite linka pro pilar sempre que houver contexto. Pilar linka de volta pros satélites
+relevantes. As duas pontas do link precisam existir — satélite sem pilar publicado ainda
+funciona (o pilar pode vir depois), mas pilar sem nenhum satélite é um artigo isolado,
+não um cluster.
+
+Isso é uma camada **além** da "regra de ouro — cluster fecha nos dois sentidos" (logo
+depois do papel 4, mais abaixo), que liga artigo → página de serviço. Um artigo passa a
+fechar em duas direções diferentes, e nenhuma substitui a outra:
+
+1. **Satélite ↔ Pilar** — blog ↔ blog, constrói autoridade temática
+2. **Artigo ↔ Página de serviço** — blog ↔ LP, constrói intenção comercial
+
+### Clusters ativos hoje
+
+| Nicho | Pilar | Satélites de nicho publicados | Serviço |
+|---|---|---|---|
+| Advocacia | `blog-site-para-advogado.html` | nenhum ainda | `servico-criacao-de-sites.html` |
+| Odontologia | `blog-site-para-dentista.html` | nenhum ainda | `servico-criacao-de-sites.html` |
+| Estética | `blog-site-para-clinica-de-estetica.html` | nenhum ainda | `servico-criacao-de-sites.html` |
+| Salão / manicure | `blog-site-para-salao-de-beleza-ou-manicure.html` | nenhum ainda | `servico-criacao-de-sites.html` |
+
+> Atualizar esta tabela sempre que um pilar ou satélite novo entrar no ar — ela é a
+> fotografia rápida de quem já tem cluster fechado e quem ainda é artigo isolado.
+> Conferir sempre com `ls marketing/site-nexora/blog-*.html`, a lista cresce a cada artigo.
+
+### Expansão por nicho
+
+Sempre que um nicho mostrar potencial comercial real (prospecção ativa, cliente fechado,
+ou volume de busca visível na pesquisa do papel 2), vale abrir cluster próprio pra ele —
+não só deixar o "site para X" solto. Esqueleto de cluster completo por nicho (checklist
+de expansão, não lista obrigatória — criar só o satélite que tiver ângulo real):
+
+- Site para [nicho] ← pilar
+- Quanto custa um site para [nicho]?
+- [Profissão] precisa ter site?
+- Site ou Instagram para [nicho]: qual funciona melhor?
+- SEO / Google Meu Negócio para [nicho]
+- Erros que fazem o site de um [nicho] perder cliente
+
+### Regra de criação — checar antes de escrever
+
+Antes de aceitar um tema novo (pedido pelo usuário ou sugerido no papel 1), responder:
+
+1. **Qual cluster esse artigo pertence?** Nicho existente, tema cross-nicho (ex.: "quanto
+   custa um site"), ou cluster novo?
+2. **Existe um pilar relacionado?** Se sim, o satélite precisa linkar pra ele. Se não, o
+   próprio artigo pode nascer como pilar — primeiro do nicho.
+3. **Quais satélites já existem nesse cluster?** Checar a tabela acima + `ls
+   marketing/site-nexora/blog-*.html` — linkar os relevantes.
+4. **Quais artigos devem receber link de volta desse conteúdo novo?** O pilar do cluster,
+   no mínimo — editar o pilar pra adicionar o link de volta faz parte da entrega, não é
+   opcional (ver papel 7, EDITOR).
+5. **Que outros satélites completariam esse cluster depois?** Não precisa criar agora, mas
+   vale registrar como sugestão no resumo de entrega.
+
+Não criar artigo só pra aumentar contagem de posts. Profundidade temática vence
+quantidade — um cluster de 4 artigos bem interligados vale mais que 10 artigos soltos
+sobre temas parecidos.
+
+### Prioridade de cluster
+
+Dar prioridade a clusters (novos ou em expansão), nesta ordem:
+
+1. Alta intenção comercial — perto de decisão de compra
+2. Relação direta com um serviço ativo da Nexora — hoje, Criação de Sites
+3. Nicho com prospecção ativa ou cliente já fechado
+4. Potencial de SEO real, validado no papel 2 — nunca achismo
+5. Várias dúvidas/objeções diferentes dentro do mesmo tema — sinal de que dá pra sustentar
+   vários satélites sem forçar conteúdo
+
+```
+Nicho → Pilar → Satélites → Links internos → Autoridade temática → Tráfego orgânico → Lead
+```
+
+---
+
 ## Pipeline — 7 papéis, um artigo
 
 Executar os papéis em sequência. Cada um tem entrada, trabalho e saída definidos.
@@ -78,6 +176,11 @@ Não pular papéis, mesmo em tema simples — o que muda é a profundidade, não
 Se o usuário deu um tema → usar.
 Se não deu → ler `marketing/seo/05-estrategia-conteudo.md`, checar quais temas já viraram artigo (`ls marketing/site-nexora/blog-*.html`) e oferecer as opções ainda não escritas.
 
+Antes de definir o brief, rodar a **Regra de criação** da seção "Estratégia de clusters
+de conteúdo" (acima) — todo artigo pertence a um cluster, e isso muda o que entra na
+tabela abaixo (pilar existente pra linkar? satélites do mesmo nicho? o artigo nasce como
+pilar novo?).
+
 Definir e registrar mentalmente antes de escrever:
 
 | Campo | Como decidir |
@@ -89,6 +192,7 @@ Definir e registrar mentalmente antes de escrever:
 | **O que ele decide depois de ler** | A ação concreta que o artigo destrava |
 | **Serviço da Nexora conectado** | Sites / Tráfego / SEO / Automação |
 | **Ângulo** | O que esse artigo diz que os outros não dizem |
+| **Cluster / papel no cluster** | Nicho ou tema cross-nicho + é satélite de um pilar existente ou nasce como pilar novo |
 
 > **Regra de escolha de tema:** priorizar quem já está perto de contratar.
 > "Quanto custa contratar um gestor de tráfego em 2026?" vale mais que
@@ -154,6 +258,12 @@ Definir antes de escrever:
 - 1+ para outro artigo do blog (contexto lateral)
 - 1+ para a página de serviço correspondente (intenção comercial)
 - Âncoras descritivas, nunca "clique aqui"
+- **Se o artigo pertence a um cluster de nicho com pilar já publicado** (ver "Clusters
+  ativos hoje"), o link pro pilar é obrigatório — conta dentro do mínimo de 3, mas não
+  substitui o link pra página de serviço
+- **Se o artigo É o pilar** de um cluster novo, linkar pros satélites que já existirem
+  nesse nicho (se nenhum existir ainda, seguir normal — o pilar nasce sozinho e recebe
+  link de satélites futuros)
 
 Artigos disponíveis hoje para linkar:
 
@@ -175,6 +285,11 @@ o artigo aparecer expandido na busca e ser citado por ChatGPT/Gemini/Perplexity)
 ---
 
 ## Regra de ouro — o cluster fecha nos dois sentidos
+
+Esta regra cobre a ligação **artigo → página de serviço**. Pra ligação **satélite ↔
+pilar** dentro do próprio blog, ver "Estratégia de clusters de conteúdo" no início deste
+arquivo — o princípio é o mesmo (nunca deixar link de mão única), só a ponta de chegada
+muda.
 
 Link interno de artigo → página de serviço não é o suficiente. Isso é rua de mão única:
 quem cai direto na página de serviço (vindo de anúncio, busca ou link direto) nunca vê
@@ -318,7 +433,11 @@ Se algum item falhar, voltar ao papel responsável e corrigir antes de seguir.
 2. Adicionar o card em `marketing/site-nexora/blog.html` — **no topo do grid**, mais recente primeiro
 3. Adicionar a URL em `marketing/site-nexora/sitemap.xml` com `lastmod` de hoje e `priority` 0.8
 4. **Fechar o cluster na página de serviço correspondente** (ver regra de ouro abaixo) — sem isso o artigo fica em rua de mão única
-5. Apresentar o resumo de entrega (formato no fim deste arquivo)
+5. **Se o artigo é satélite de um pilar existente**, editar o pilar pra adicionar o link
+   de volta (seção final ou "leia também") — e atualizar a tabela "Clusters ativos hoje"
+   no início deste arquivo. Se o artigo nasce como pilar novo, registrar a linha nova
+   nessa mesma tabela.
+6. Apresentar o resumo de entrega (formato no fim deste arquivo)
 
 ---
 
@@ -432,6 +551,7 @@ ARTIGO: <título>
 Arquivo:   marketing/site-nexora/blog-<slug>.html
 Keyword:   <keyword principal> · intenção <tipo>
 Tamanho:   <n> palavras · <n> min de leitura
+Cluster:   <nicho ou tema cross-nicho> · <papel: pilar novo / satélite de <pilar>>
 
 Blocos:    resposta direta · tabela de faixas · simulação · contrapontos · FAQ (<n>)
 Links:     <n> internos (<lista>)
@@ -440,6 +560,10 @@ Schema:    BlogPosting + FAQPage
 Também atualizei:
   blog.html    → card no topo do grid
   sitemap.xml  → URL nova, priority 0.8
+  <pilar/satélite editado pra linkar de volta, se houver>
+  Tabela "Clusters ativos hoje" (neste SKILL.md) → <o que mudou, se mudou>
+
+Satélites que completariam esse cluster depois: <sugestões, ou "nenhuma por ora">
 
 PRA VOCÊ PREENCHER:
   <lista dos marcadores [EXPERIENCIA PROPRIA], com linha e o que colocar>
@@ -482,7 +606,7 @@ de considerar o artigo pronto. Se qualquer resposta for "não", o artigo volta p
 3. **Honestidade converte mais que persuasão.** Dizer quando a Nexora não é a resposta é o que faz acreditarem quando ela é.
 4. **Todo número tem origem.** Pesquisa real ou conta explícita — nunca chute com cara de dado.
 5. **A Nexora entra por último.** Valor primeiro, oferta depois.
-6. **Cluster, não texto solto.** Todo artigo linka e é linkado.
+6. **Cluster, não texto solto.** Todo artigo linka e é linkado — pro pilar do seu nicho (se existir) e pra página de serviço correspondente. Profundidade temática vence quantidade de posts.
 7. **Tamanho é consequência.** Nem uma palavra de enchimento.
 8. **Nunca resumir concorrente, superar ele.** Achar o que ele não respondeu, o que ele
    errou, o exemplo que faltou — e entregar isso. Resumo de SERP não constrói autoridade.
