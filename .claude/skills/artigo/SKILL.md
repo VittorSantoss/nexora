@@ -104,10 +104,10 @@ fechar em duas direções diferentes, e nenhuma substitui a outra:
 
 | Nicho | Pilar | Satélites de nicho publicados | Serviço |
 |---|---|---|---|
-| Advocacia | `blog-site-para-advogado.html` | nenhum ainda | `servico-criacao-de-sites.html` |
-| Odontologia | `blog-site-para-dentista.html` | nenhum ainda | `servico-criacao-de-sites.html` |
+| Advocacia | `blog-site-para-advogado.html` | `blog-quanto-custa-um-site-para-advogado.html` | `servico-criacao-de-sites.html` |
+| Odontologia | `blog-site-para-dentista.html` | `blog-quanto-custa-um-site-para-dentista.html` | `servico-criacao-de-sites.html` |
 | Estética | `blog-site-para-clinica-de-estetica.html` | nenhum ainda | `servico-criacao-de-sites.html` |
-| Salão / manicure | `blog-site-para-salao-de-beleza-ou-manicure.html` | nenhum ainda | `servico-criacao-de-sites.html` |
+| Salão / manicure | `blog-site-para-salao-de-beleza-ou-manicure.html` | `blog-site-ou-instagram-salao-de-beleza.html` | `servico-criacao-de-sites.html` |
 
 > Atualizar esta tabela sempre que um pilar ou satélite novo entrar no ar — ela é a
 > fotografia rápida de quem já tem cluster fechado e quem ainda é artigo isolado.
