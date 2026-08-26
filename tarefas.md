@@ -20,4 +20,6 @@
   `clientes/Elisangela-Paz/briefing.md` e migrar o conteúdo de
   `propostas/elisangela-paz/` pra lá
 - Seguir prospecção Tier A — restam leads na lista além de Alex Barbosa e
-  Elisângela Paz, ver `marketing/prospeccao/abordagem-tier-a.md`
+  Elisângela Paz, ver `marketing/prospeccao/abordagem-tier-a.md`. Praça de
+  São Roque aberta em 21/08 (`advogados-sao-roque.md`). Cadência de
+  follow-up em `cadencia-follow-up.md` e funil em `pipeline-prospeccao.xlsx`

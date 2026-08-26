@@ -10,7 +10,9 @@
 - `clientes/` — uma subpasta por cliente, autossuficiente
 - `propostas/` — propostas em rascunho ou enviadas
 - `referencias/` — sites de referência pra usar na criação de sites futuros
-- `marketing/` — conteúdo próprio da Nexora (Insta, portfolio)
+- `marketing/` — conteúdo próprio da Nexora (site, blog, Insta, prospecção, portfólio)
+- `templates/` — modelos reaproveitáveis (skills, identidade, perfis, ferramentas)
+- `scripts/` — utilitários avulsos do workspace
 - `saidas/` — emails, documentos pontuais
 - `dados/` — arquivos a analisar
 - `tarefas.md` — pipeline, prazos, próximos passos
@@ -109,12 +111,20 @@ precisa deixar isso claro.
   bruto (print do Google, Instagram, PDF de venda) pedindo site passa pela
   skill. Ela monta hub + LP por serviço, com identidade visual exclusiva do
   cliente — nunca a identidade dark da Nexora
+- **Peça de portfólio → sempre usar a skill `/anonimizar-demo`.** Qualquer
+  "tira as informações reais desse site", "transforma essa demo em
+  portfólio" ou "cria uma versão de exemplo pra mostrar pra outros
+  clientes" passa pela skill. Ela troca WhatsApp, telefone, endereço,
+  e-mail, redes, nome do negócio e depoimentos por dados fictícios, gera
+  arquivo novo sem sobrescrever o original, e o resultado fica em
+  `marketing/portfolio/`
 - Cliente novo → criar pasta `clientes/<Nome>/` com `briefing.md`
 - Proposta enviada → `clientes/<Nome>/proposta.html` (ou pasta
   `propostas/` se ainda não fechou)
 - Gargalo atual é duplo: (1) construir mais sites de treino até
-  entregar um resultado confiável, (2) resolver prospecção ativa —
-  candidata forte a virar skill via `/mapear-rotinas`
+  entregar um resultado confiável, (2) executar a cadência de prospecção
+  com constância — a skill `/prospectar` e a `cadencia-follow-up.md` já
+  resolveram o "como", o que falta é ritmo
 - Outras regras que aparecerem com o uso
 
 ## Ferramentas conectadas

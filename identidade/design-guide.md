@@ -45,6 +45,25 @@ Dark, editorial, minimalista, confiante. Textura granulada sutil sobre o fundo (
 
 ---
 
+## Carrossel e post: variar a direção visual
+
+Cada peça precisa de uma direção visual nova — **nunca repetir a fórmula**
+(fundo dark com título embaixo, sempre igual). O que varia de um post pro
+outro: layout, composição, hierarquia, enquadramento, uso do espaço,
+tratamento do fundo.
+
+O que **não** varia, porque é o que amarra a marca:
+
+- Fontes (Clash Display 600 nos títulos, General Sans no corpo)
+- Gradiente da marca, sempre com moderação — palavra-chave, nunca bloco
+- Paleta dark e a textura granulada
+- Logo no slide final (CTA)
+
+Regra prática: se o post novo parece a repetição do anterior com outro
+texto, a direção visual não mudou o bastante.
+
+---
+
 ## O que NUNCA fazer
 
 Usar o gradiente da marca em áreas grandes (só em palavras/detalhes pontuais). Usar cores fora da paleta (nada de vermelho, verde ou amarelo puro). Evitar sombras tradicionais — quebra o estilo flat/editorial.
