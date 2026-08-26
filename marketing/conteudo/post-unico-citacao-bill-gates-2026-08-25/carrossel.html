@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Post único — citação Bill Gates</title>
+<style>
+  @font-face{
+    font-family:"Clash Display";
+    src:url("../../site-nexora/assets/fonts/clash-display-600.woff2") format("woff2");
+    font-weight:600; font-style:normal; font-display:swap;
+  }
+  @font-face{
+    font-family:"General Sans";
+    src:url("../../site-nexora/assets/fonts/general-sans-500.woff2") format("woff2");
+    font-weight:500; font-style:normal; font-display:swap;
+  }
+  @font-face{
+    font-family:"General Sans";
+    src:url("../../site-nexora/assets/fonts/general-sans-600.woff2") format("woff2");
+    font-weight:600; font-style:normal; font-display:swap;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#000; }
+
+  .slide {
+    width:1080px;
+    height:1350px;
+    position:relative;
+    background:#050505;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .spacer-top { flex:0.7; }
+
+  /* textura granulada sutil */
+  .slide::before {
+    content:"";
+    position:absolute; inset:0;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    opacity:.045;
+    mix-blend-mode:overlay;
+    pointer-events:none;
+  }
+
+  .logo {
+    position:absolute;
+    top:64px; left:90px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    z-index:2;
+  }
+
+  .logo img { height:26px; }
+
+  .logo span {
+    font-family:"General Sans", sans-serif;
+    font-weight:600;
+    font-size:19px;
+    letter-spacing:0.02em;
+    color:#f4f4f2;
+  }
+
+  .quote-mark {
+    position:relative;
+    z-index:2;
+    margin:170px 0 -66px 82px;
+    font-family:"Clash Display", sans-serif;
+    font-size:220px;
+    font-weight:600;
+    line-height:1;
+    background:linear-gradient(135deg,#8b5cf6,#6366f1,#3b82f6,#ec4899);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    opacity:.9;
+    user-select:none;
+  }
+
+  .content {
+    position:relative;
+    z-index:2;
+    padding:0 90px;
+  }
+
+  .spacer {
+    flex:1;
+  }
+
+  .quote {
+    font-family:"Clash Display", sans-serif;
+    font-weight:600;
+    font-size:72px;
+    line-height:1.04;
+    letter-spacing:-0.02em;
+    color:#f4f4f2;
+    max-width:900px;
+  }
+
+  .quote .grad {
+    background:linear-gradient(135deg,#8b5cf6,#6366f1,#3b82f6,#ec4899);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+
+  .rule {
+    width:70px;
+    height:4px;
+    border-radius:2px;
+    background:linear-gradient(135deg,#8b5cf6,#6366f1,#3b82f6,#ec4899);
+    margin:48px 0 28px;
+  }
+
+  .attribution {
+    font-family:"General Sans", sans-serif;
+    font-weight:600;
+    font-size:22px;
+    letter-spacing:0.06em;
+    color:#9d9da6;
+  }
+
+  .attribution span {
+    color:#f4f4f2;
+  }
+
+  .footer {
+    position:relative;
+    z-index:2;
+    border-top:1px solid rgba(255,255,255,.12);
+    padding:36px 90px 56px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  .footer .brand {
+    font-family:"General Sans", sans-serif;
+    font-weight:600;
+    font-size:20px;
+    letter-spacing:0.02em;
+    color:#f4f4f2;
+  }
+
+  .footer .handle {
+    font-family:"General Sans", sans-serif;
+    font-weight:500;
+    font-size:18px;
+    letter-spacing:0.02em;
+    color:#67676f;
+  }
+</style>
+</head>
+<body>
+
+  <div class="slide" id="post-1">
+    <div class="logo">
+      <img src="../../site-nexora/assets/nexora-icon.png" alt="">
+      <span>NEXORA</span>
+    </div>
+
+    <div class="quote-mark">&ldquo;</div>
+
+    <div class="content">
+      <div class="quote">
+        Em alguns anos vão existir dois tipos de empresas: as que estão na <span class="grad">internet</span> e as que estão fora dos negócios.
+      </div>
+      <div class="rule"></div>
+      <div class="attribution">— <span>BILL GATES</span>, fundador da Microsoft</div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="footer">
+      <div class="brand">Nexora</div>
+      <div class="handle">@nexoramkt.agencia</div>
+    </div>
+  </div>
+
+</body>
+</html>
