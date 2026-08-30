@@ -105,9 +105,9 @@ fechar em duas direções diferentes, e nenhuma substitui a outra:
 | Nicho | Pilar | Satélites de nicho publicados | Serviço |
 |---|---|---|---|
 | Advocacia | `blog-site-para-advogado.html` | `blog-quanto-custa-um-site-para-advogado.html`, `blog-advogado-precisa-ter-site.html`, `blog-seo-para-advogados.html`, `blog-site-ou-instagram-para-advogado.html`, `blog-erros-site-advogado-perde-cliente.html` | `servico-criacao-de-sites.html` · `servico-seo.html` |
-| Odontologia | `blog-site-para-dentista.html` | `blog-quanto-custa-um-site-para-dentista.html`, `blog-site-ou-instagram-para-dentista.html`, `blog-dentista-precisa-ter-site.html` | `servico-criacao-de-sites.html` |
-| Estética | `blog-site-para-clinica-de-estetica.html` | `blog-quanto-custa-um-site-para-clinica-de-estetica.html`, `blog-clinica-de-estetica-precisa-ter-site.html`, `blog-site-ou-instagram-para-clinica-de-estetica.html` | `servico-criacao-de-sites.html` |
-| Salão / manicure | `blog-site-para-salao-de-beleza-ou-manicure.html` | `blog-site-ou-instagram-salao-de-beleza.html`, `blog-quanto-custa-um-site-para-salao-de-beleza.html`, `blog-seo-google-meu-negocio-salao-de-beleza.html` | `servico-criacao-de-sites.html` · `servico-seo.html` |
+| Odontologia | `blog-site-para-dentista.html` | `blog-quanto-custa-um-site-para-dentista.html`, `blog-site-ou-instagram-para-dentista.html`, `blog-dentista-precisa-ter-site.html`, `blog-seo-google-meu-negocio-para-dentista.html`, `blog-erros-site-dentista-perde-cliente.html` | `servico-criacao-de-sites.html` · `servico-seo.html` |
+| Estética | `blog-site-para-clinica-de-estetica.html` | `blog-quanto-custa-um-site-para-clinica-de-estetica.html`, `blog-clinica-de-estetica-precisa-ter-site.html`, `blog-site-ou-instagram-para-clinica-de-estetica.html`, `blog-seo-google-meu-negocio-clinica-de-estetica.html`, `blog-erros-site-clinica-de-estetica-perde-cliente.html` | `servico-criacao-de-sites.html` · `servico-seo.html` |
+| Salão / manicure | `blog-site-para-salao-de-beleza-ou-manicure.html` | `blog-site-ou-instagram-salao-de-beleza.html`, `blog-quanto-custa-um-site-para-salao-de-beleza.html`, `blog-seo-google-meu-negocio-salao-de-beleza.html`, `blog-manicure-cabeleireiro-precisa-ter-site.html` | `servico-criacao-de-sites.html` · `servico-seo.html` |
 
 > Atualizar esta tabela sempre que um pilar ou satélite novo entrar no ar — ela é a
 > fotografia rápida de quem já tem cluster fechado e quem ainda é artigo isolado.
