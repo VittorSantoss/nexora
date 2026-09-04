@@ -110,7 +110,7 @@ fechar em duas direções diferentes, e nenhuma substitui a outra:
 | Salão / manicure | `blog-site-para-salao-de-beleza-ou-manicure.html` | `blog-site-ou-instagram-salao-de-beleza.html`, `blog-quanto-custa-um-site-para-salao-de-beleza.html`, `blog-seo-google-meu-negocio-salao-de-beleza.html`, `blog-manicure-cabeleireiro-precisa-ter-site.html`, `blog-erros-site-salao-de-beleza-perde-cliente.html` | `servico-criacao-de-sites.html` · `servico-seo.html` |
 | Nutrição | `blog-site-para-nutricionista.html` | `blog-quanto-custa-um-site-para-nutricionista.html`, `blog-nutricionista-precisa-ter-site.html`, `blog-site-ou-instagram-para-nutricionista.html`, `blog-seo-google-meu-negocio-para-nutricionista.html`, `blog-erros-site-nutricionista-perde-cliente.html` | `servico-criacao-de-sites.html` · `servico-seo.html` |
 | Psicologia | `blog-site-para-psicologo.html` | `blog-quanto-custa-um-site-para-psicologo.html`, `blog-psicologo-precisa-ter-site.html`, `blog-site-ou-instagram-para-psicologo.html`, `blog-seo-google-meu-negocio-para-psicologo.html`, `blog-erros-site-psicologo-perde-cliente.html` | `servico-criacao-de-sites.html` · `servico-seo.html` |
-| Personal trainer | `blog-site-para-personal-trainer.html` | nenhum ainda — pilar recém-aberto | `servico-criacao-de-sites.html` |
+| Personal trainer | `blog-site-para-personal-trainer.html` | `blog-quanto-custa-um-site-para-personal-trainer.html`, `blog-personal-trainer-precisa-ter-site.html`, `blog-site-ou-instagram-para-personal-trainer.html` | `servico-criacao-de-sites.html` |
 
 > Atualizar esta tabela sempre que um pilar ou satélite novo entrar no ar — ela é a
 > fotografia rápida de quem já tem cluster fechado e quem ainda é artigo isolado.
