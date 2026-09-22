@@ -49,9 +49,25 @@ pagamento (entrada/total) ainda não confirmado. Falta migrar
 `propostas/elisangela-paz/` pra `clientes/Elisangela-Paz/` e criar o
 `briefing.md` de lá.
 
-Fora essas duas, nenhum cliente pago confirmado ainda. Fase segue de treino:
-construir mais alguns sites pra pegar o jeito antes de vender pra valer. O
-`/atualizar` mantém isso sincronizado com as pastas em `clientes/`.
+**Dra. Íris Coan Zacarias** — advogada especialista em Direito Médico e da
+Saúde em Alumínio/SP (região de Sorocaba). Site completo (LP + blog com 3
+artigos) migrado pra produção em 16/09/2026, com domínio próprio
+`iriscoanzacariasadvocacia.com.br` já comprado e conectado na Vercel — DNS em
+configuração pelo Manoel. Cliente paga confirmada — ver
+`clientes/Iris-Coan/briefing.md`. Status de pagamento (entrada/total) ainda
+não detalhado.
+
+**Estética Boituva** — clínica de estética e harmonização orofacial em
+Boituva/SP, Dra. Gisele Fernandes. Ainda é lead, não cliente pago: site
+completo entregue como demo (hub + 5 LPs) em 28/08 —
+`clientes/Estetica-Boituva/`, no ar em `estetica-boituva-demo.vercel.app`
+com `noindex` até fechar. Falta fotos reais, revisão da cliente e domínio
+próprio.
+
+Fora Jeniffer, Elisângela e Íris, nenhum cliente pago confirmado ainda — a
+Estética Boituva é lead com demo pronta, não fechamento. Fase segue de
+treino: construir mais alguns sites pra pegar o jeito antes de vender pra
+valer. O `/atualizar` mantém isso sincronizado com as pastas em `clientes/`.
 
 ## Perfil de cliente
 

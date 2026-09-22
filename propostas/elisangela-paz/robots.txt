@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elisangela-paz-demo.vercel.app/sitemap.xml

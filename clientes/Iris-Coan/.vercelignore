@@ -1,0 +1,29 @@
+# Documentos internos — NUNCA publicar junto com o site da cliente.
+# O briefing tem dados de negociação, pendências e notas internas.
+# Nada disso deve ficar acessível por URL pública.
+briefing.md
+*.md
+log.txt
+serve-log.txt
+
+# Build/infra
+.vercel
+
+# Screenshots de revisão interna
+_preview/
+
+# Fonte do retrato (braços cruzados, fundo branco). O site usa o recorte
+# iris-zacarias.png, gerado a partir dele.
+image.png
+
+# Arquivos-fonte do logo — o site usa logo-marca.png, extraido deles.
+image copy.png
+logo-completo.png
+.env.local
+
+# Versao em pe do retrato (remove.bg), preterida por ter o dobro de ruido.
+iris-em-pe.png
+
+# Recorte de baixa resolucao (255x314), substituido em 12/09 pela foto de
+# estudio original (iris-zacarias-retrato-2026.jpg, 960x1280).
+iris-zacarias.png

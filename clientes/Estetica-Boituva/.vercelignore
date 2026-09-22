@@ -1,0 +1,7 @@
+# Documentos internos da Nexora — nunca sobem pro deploy do cliente
+briefing.md
+img/README.md
+.vercelignore
+
+# Build/infra
+.vercel

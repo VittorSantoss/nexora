@@ -11,6 +11,81 @@
         ],
         "createdAt": "2026-08-15T11:15:11.900Z",
         "reason": "Classe .accent e decisao de marca documentada em identidade/design-guide.md: gradiente roxo-indigo-azul reservado a uma palavra de destaque por secao. Codigo pre-existente, nao introduzido nesta edicao."
+      },
+      {
+        "rule": "overused-font",
+        "value": "montserrat",
+        "createdAt": "2026-08-28T12:37:16.637Z",
+        "reason": "user confirmed: o briefing da Estetica Boituva pede Montserrat por escrito ('TIPOGRAFIA: Utilizar Montserrat ou uma fonte sans-serif equivalente')"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "marketing/conteudo/post-unico-instagram-nao-e-google-2026-08-31/carrossel.html"
+        ],
+        "createdAt": "2026-08-31T11:38:55.980Z",
+        "reason": "design-guide da Nexora: gradiente da marca reservado a uma palavra-chave por peca (aqui, 'Google') — padrao de identidade, nao decoracao aleatoria"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "marketing/conteudo/post-unico-site-vendedor-24h-2026-09-02/carrossel.html"
+        ],
+        "createdAt": "2026-09-02T10:39:52.084Z",
+        "reason": "design-guide da Nexora: gradiente da marca reservado a uma palavra-chave por peca (aqui, 'vendedor') — padrao de identidade"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-09-12T04:51:14.137Z",
+        "reason": "fonte de corpo pre-existente no template original (Iris Coan, Nexora e agora Elisangela usam Inter/Archivo/General Sans no texto corrido); pedido de hoje foi só sobre a fonte da logo, nao o corpo do texto"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "propostas/elisangela-paz/demissao-sem-justa-causa.html"
+        ],
+        "createdAt": "2026-09-12T04:51:57.057Z",
+        "reason": "padrao .resposta/.nota (borda dourada a esquerda) ja usado em todos os artigos da Nexora (Iris Coan, blog-nexora); bloco de destaque deliberado, pre-existente, nao introduzido nesta sessao"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "propostas/elisangela-paz/divisao-de-bens-divorcio.html"
+        ],
+        "createdAt": "2026-09-12T04:52:03.557Z",
+        "reason": "mesmo padrao .resposta/.nota pre-existente, repetido nos 3 artigos deste site"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "propostas/elisangela-paz/produto-com-defeito.html"
+        ],
+        "createdAt": "2026-09-12T04:52:09.870Z",
+        "reason": "mesmo padrao .resposta/.nota pre-existente, repetido nos 3 artigos deste site"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "marketing/conteudo/carrossel-iphone-18-ticket-2026-09-12/carrossel.html"
+        ],
+        "createdAt": "2026-09-12T13:05:20.064Z",
+        "reason": "design-guide da Nexora: gradiente da marca reservado a uma palavra-chave por peca (aqui, 'marca' e 'certeza') — mesmo padrao ja sancionado em outros carrosseis"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "marketing/conteudo/carrossel-iphone-18-atualizacao-2026-09-16/carrossel.html"
+        ],
+        "createdAt": "2026-09-16T11:46:17.008Z",
+        "reason": "identidade/design-guide.md documenta gradiente da marca em palavra-chave isolada (.grad) como padrão oficial da Nexora, não decorativo genérico"
       }
     ]
   }

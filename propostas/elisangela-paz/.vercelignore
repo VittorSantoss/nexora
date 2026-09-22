@@ -1,0 +1,14 @@
+# Documentos internos — NUNCA publicar junto com o site da cliente.
+# O roteiro de fechamento tem estratégia de negociação; o contrato e o PDF
+# têm o valor fechado. Nada disso deve ficar acessível por URL pública.
+roteiro-fechamento.md
+prestacao-servico.html
+prestacao-servico.pdf
+nexora-logo.png
+log.txt
+
+# Build/infra
+.vercel
+
+# Screenshots de revisão interna
+_preview/

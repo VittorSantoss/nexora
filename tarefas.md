@@ -13,12 +13,23 @@
 - **Jeniffer Almeida.** Site completo em construção (hub + LP de
   atendimento + LP do curso), no ar em produção. Status de pagamento
   ainda não confirmado — ver `clientes/Jeniffer-Almeida/briefing.md`.
+- **Dra. Íris Coan Zacarias — demo NO AR (11/09), conteúdo atualizado (11-12/09).**
+  Advogada de Direito Médico e da Saúde em Alumínio/SP. Ainda é lead, não cliente paga.
+  **https://iris-zacarias-demo.vercel.app** — LP + blog com 3 artigos, com
+  `noindex` até fechar. Link pronto pra mandar pra ela.
+  OAB (538.294), bio completa, e-mail e os prazos do processo ético no CRM já
+  entraram no site (ela mandou os dados direto). Só falta pra publicar de
+  verdade: foto em alta resolução (original da de braços cruzados, a atual é
+  255×314) e confirmar a rua do endereço — ver `clientes/Iris-Coan/briefing.md`.
 
 ## Próximos passos
 
 - Confirmar pagamento da Elisângela Paz, criar
   `clientes/Elisangela-Paz/briefing.md` e migrar o conteúdo de
   `propostas/elisangela-paz/` pra lá
+- Mandar a demo da Dra. Íris pra ela e colher retorno. Já com OAB, bio e prazos
+  do processo ético resolvidos, falta só pedir o ORIGINAL da foto de braços
+  cruzados em alta resolução e confirmar a rua do endereço
 - Seguir prospecção Tier A — restam leads na lista além de Alex Barbosa e
   Elisângela Paz, ver `marketing/prospeccao/abordagem-tier-a.md`. Praça de
   São Roque aberta em 21/08 (`advogados-sao-roque.md`). Cadência de

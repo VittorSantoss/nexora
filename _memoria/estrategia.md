@@ -12,11 +12,11 @@ Construção inicial. Manoel é leigo em Claude Code e ainda está pegando o jei
 
 Dois gargalos, nessa ordem:
 1. Construir mais alguns sites de treino pra conseguir entregar um site decente e confiável pro primeiro cliente pago
-2. Prospecção — já começou de verdade: levantamento de 30 leads qualificados em advocacia em Boituva, em 2 levas (`marketing/prospeccao/advogados-boituva.md`, 15/08 e 17/08), segunda praça aberta em São Roque (`advogados-sao-roque.md`, 21/08), proposta enviada ao Dr. Alex Barbosa (Tier A, `propostas/alex-barbosa/`, 16/08) e negócio fechado com a Dra. Elisângela Paz (Tier A, `propostas/elisangela-paz/`, 18/08 demo → fechou 19/08) — falta migrar pra `clientes/` e confirmar pagamento (ver "Contexto com prazo")
+2. Prospecção — já começou de verdade: levantamento de 30 leads qualificados em advocacia em Boituva, em 2 levas (`marketing/prospeccao/advogados-boituva.md`, 15/08 e 17/08), segunda praça aberta em São Roque (`advogados-sao-roque.md`, 21/08), terceira praça em Rio de Janeiro/RJ (`advogados-rio-de-janeiro.md`, 26/08 — 22 leads qualificados de 30 no scrape), proposta enviada ao Dr. Alex Barbosa (Tier A, `propostas/alex-barbosa/`, 16/08) e negócio fechado com a Dra. Elisângela Paz (Tier A, `propostas/elisangela-paz/`, 18/08 demo → fechou 19/08) — falta migrar pra `clientes/` e confirmar pagamento (ver "Contexto com prazo")
 
 ## O que pode esperar
 
-Ampliar o portfólio de serviços (tráfego pago, SEO, automação com IA) — já em andamento no site e no blog (48 artigos cobrindo os 4 serviços, produzidos em levas de 5 por dia, organizados em clusters de pilar + satélites por nicho), mesmo sem venda ativa desses serviços ainda. A Nexora se posiciona como agência completa.
+Ampliar o portfólio de serviços (tráfego pago, SEO, automação com IA) — já em andamento no site e no blog (74 artigos cobrindo os 4 serviços, organizados em clusters de pilar + satélites por nicho — advocacia, odontologia, estética, salão/manicure, nutrição e psicologia fechados; personal trainer como pilar novo em aberto), mesmo sem venda ativa desses serviços ainda. A Nexora se posiciona como agência completa. Desde 28/08 há também uma LP de SEO local (`agencia-de-marketing-em-boituva.html`, H1 "Agência de marketing em Boituva") — página comercial pra keyword local, linkada no nav/rodapé de todo o site, separada do artigo informacional de mesmo tema.
 
 ## Contexto com prazo
 

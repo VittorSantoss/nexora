@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://estetica-boituva-demo.vercel.app/sitemap.xml

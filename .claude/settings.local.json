@@ -1,5 +1,8 @@
 {
   "description": "Impeccable design detector: immediate-tier checks after Edit/Write/MultiEdit on UI files, full-rule deep pass on Stop.",
+  "skillOverrides": {
+    "abrir": "off"
+  },
   "hooks": {
     "PostToolUse": [
       {

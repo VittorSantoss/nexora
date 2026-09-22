@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iriscoanzacariasadvocacia.com.br/sitemap.xml

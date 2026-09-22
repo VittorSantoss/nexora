@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carrossel — Todo ano tem iPhone novo</title>
+<style>
+  @font-face{ font-family:"Clash Display"; src:url("assets/fonts/clash-display-400.woff2") format("woff2"); font-weight:400; font-display:block; }
+  @font-face{ font-family:"Clash Display"; src:url("assets/fonts/clash-display-600.woff2") format("woff2"); font-weight:600; font-display:block; }
+  @font-face{ font-family:"General Sans"; src:url("assets/fonts/general-sans-400.woff2") format("woff2"); font-weight:400; font-display:block; }
+  @font-face{ font-family:"General Sans"; src:url("assets/fonts/general-sans-500.woff2") format("woff2"); font-weight:500; font-display:block; }
+  @font-face{ font-family:"General Sans"; src:url("assets/fonts/general-sans-600.woff2") format("woff2"); font-weight:600; font-display:block; }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{ background:#111; }
+
+  :root{
+    --purple:#8b5cf6; --indigo:#6366f1; --blue:#3b82f6; --pink:#ec4899;
+    --gradient-brand: linear-gradient(120deg, var(--purple) 0%, var(--indigo) 45%, var(--blue) 100%);
+  }
+
+  .slide{
+    width:1080px; height:1350px; position:relative; overflow:hidden;
+    font-family:"General Sans", sans-serif;
+    background:var(--bg); color:var(--ink);
+  }
+  .slide.light{ --bg:#F5ECD7; --bg-deep:#E7D9AE; --ink:#1A1610; --ink-soft:#5f5544; --ink-mute:#8f8570; --rule:rgba(26,22,16,.24); }
+  .slide.dark{ --bg:#050505; --bg-deep:#0d0d0d; --ink:#F4F4F2; --ink-soft:#9d9da6; --ink-mute:#67676f; --rule:rgba(255,255,255,.18); }
+
+  .slide.dark::before{
+    content:""; position:absolute; inset:0; z-index:1; opacity:.045; pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .inner{ position:relative; z-index:3; height:100%; display:flex; flex-direction:column; padding:78px 86px; }
+
+  .topbar{ display:flex; align-items:center; justify-content:space-between; }
+  .brand{ display:flex; align-items:center; gap:11px; }
+  .brand img{ height:25px; display:block; }
+  .brand span{ font-family:"Clash Display",sans-serif; font-weight:600; font-size:19px; letter-spacing:-.01em; }
+  .counter{ font-size:13px; font-weight:600; letter-spacing:.2em; color:var(--ink-mute); }
+
+  .eyebrow{ display:flex; align-items:center; gap:10px; font-size:14px; font-weight:700; letter-spacing:.26em; text-transform:uppercase; color:var(--ink-mute); }
+  .eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--indigo); flex:none; }
+
+  .rule{ height:3px; width:70px; background:var(--gradient-brand); border-radius:2px; }
+
+  .h2{ font-family:"Clash Display",sans-serif; font-weight:600; letter-spacing:-.02em; line-height:1.08; color:var(--ink); }
+  .p{ font-family:"General Sans",sans-serif; font-weight:500; line-height:1.55; color:var(--ink-soft); }
+
+  .grad{ background:var(--gradient-brand); -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+  .footer{ margin-top:auto; display:flex; align-items:center; justify-content:space-between; padding-top:26px; border-top:1px solid var(--rule); font-size:15px; font-weight:600; letter-spacing:.03em; color:var(--ink-mute); }
+  .footer .hi{ color:var(--ink); }
+
+  /* ---------- SLIDE 1 — CAPA (foto) ---------- */
+  #s1{ background:#0b0b10; }
+  #s1 .photo{ position:absolute; inset:0; z-index:0; }
+  #s1 .photo img{ width:100%; height:100%; object-fit:cover; object-position:center 20%; }
+  #s1 .photo::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(5,5,8,.35) 0%, rgba(5,5,8,.55) 45%, rgba(5,5,8,.97) 92%),
+               linear-gradient(120deg, rgba(139,92,246,.22), rgba(59,130,246,.12));
+  }
+  #s1 .inner{ justify-content:flex-end; padding-bottom:72px; }
+  #s1 .topbar{ position:absolute; top:78px; left:86px; right:86px; }
+  #s1 .eyebrow{ color:rgba(244,244,242,.7); }
+  #s1 .headline{ font-family:"Clash Display",sans-serif; font-weight:600; font-size:66px; line-height:1.06; letter-spacing:-.025em; color:#F4F4F2; max-width:880px; margin-top:22px; }
+  #s1 .sub{ font-size:23px; font-weight:500; color:rgba(244,244,242,.72); margin-top:22px; max-width:640px; line-height:1.5; }
+
+  /* ---------- SLIDE base (2,3,4) — centralizado ---------- */
+  .mid-slide .inner{ padding-top:64px; }
+  .mid-slide .mid{ flex:1; display:flex; flex-direction:column; justify-content:center; }
+  .mid-slide .rule{ margin-top:22px; }
+  .mid-slide .h2{ font-size:56px; max-width:840px; margin-top:38px; }
+  .mid-slide .p{ font-size:24px; max-width:760px; margin-top:30px; }
+  .mid-slide .footer{ margin-top:0; }
+
+
+  /* ---------- SLIDE 5 — CTA ---------- */
+  #s5 .inner{ align-items:center; text-align:center; justify-content:center; padding-top:78px; padding-bottom:78px; }
+  #s5 .topbar{ position:absolute; top:78px; left:86px; right:86px; }
+  #s5 .logo{ height:56px; margin-bottom:44px; }
+  #s5 .cta-head{ font-family:"Clash Display",sans-serif; font-weight:600; font-size:52px; line-height:1.12; letter-spacing:-.02em; max-width:760px; }
+  #s5 .cta-sub{ font-size:22px; font-weight:500; color:var(--ink-soft); margin-top:22px; max-width:580px; line-height:1.5; }
+  #s5 .pill{ margin-top:40px; background:#F4F4F2; color:#0b0b0c; font-family:"Clash Display",sans-serif; font-weight:600; font-size:23px; letter-spacing:-.01em; padding:18px 34px; border-radius:999px; }
+  #s5 .handle{ margin-top:28px; font-size:15px; font-weight:600; letter-spacing:.12em; color:var(--ink-mute); text-transform:uppercase; }
+</style>
+</head>
+<body>
+
+  <!-- SLIDE 1 — CAPA (foto) -->
+  <div class="slide" id="s1">
+    <div class="photo"><img src="foto-capa.jpg" alt=""></div>
+    <div class="inner">
+      <div class="topbar">
+        <div class="brand"><img src="nexora-icon.png" alt=""><span style="color:#F4F4F2;">Nexora</span></div>
+        <div class="counter" style="color:rgba(244,244,242,.6);">01 / 05</div>
+      </div>
+      <div class="eyebrow"><span class="dot"></span>Lançamento</div>
+      <h1 class="headline">Todo ano tem iPhone novo. Seu site, não.</h1>
+      <p class="sub">Um muda toda vez que a Apple decide. O outro só muda quando alguém lembra que ele existe.</p>
+    </div>
+  </div>
+
+  <!-- SLIDE 2 — a rotina da Apple (light) -->
+  <div class="slide light mid-slide" id="s2">
+    <div class="inner">
+      <div class="topbar">
+        <div class="brand"><img src="nexora-icon.png" alt=""><span>Nexora</span></div>
+        <div class="counter">02 / 05</div>
+      </div>
+      <div class="mid">
+        <div class="eyebrow"><span class="dot"></span>A rotina da Apple</div>
+        <div class="rule"></div>
+        <h2 class="h2">Trocar de cara todo setembro virou parte do produto.</h2>
+        <p class="p">Vira fila, vira notícia, vira conversa — antes mesmo do aparelho estar na mão de alguém.</p>
+      </div>
+      <div class="footer"><span>de olho no lançamento</span><span class="hi">e a sua empresa?</span></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3 — a rotina da maioria (dark) -->
+  <div class="slide dark mid-slide" id="s3">
+    <div class="inner">
+      <div class="topbar">
+        <div class="brand"><img src="nexora-icon.png" alt=""><span>Nexora</span></div>
+        <div class="counter">03 / 05</div>
+      </div>
+      <div class="mid">
+        <div class="eyebrow"><span class="dot"></span>A rotina da maioria</div>
+        <div class="rule"></div>
+        <h2 class="h2">A maioria das empresas não troca a delas <span class="grad">nunca</span>.</h2>
+        <p class="p">O site — quando tem — é o mesmo do dia em que foi ao ar. Às vezes, anos atrás.</p>
+      </div>
+      <div class="footer"><span>continua parado</span><span class="hi">enquanto o mercado muda</span></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 — o que isso custa (light, citação) -->
+  <div class="slide light mid-slide" id="s4">
+    <div class="inner">
+      <div class="topbar">
+        <div class="brand"><img src="nexora-icon.png" alt=""><span>Nexora</span></div>
+        <div class="counter">04 / 05</div>
+      </div>
+      <div class="mid">
+        <div class="eyebrow"><span class="dot"></span>O que isso custa</div>
+        <div class="rule"></div>
+        <h2 class="h2" style="font-size:50px; max-width:780px;">Não é sobre moda. É sobre continuar parecendo confiável pra quem tá comparando você com quem apareceu essa semana.</h2>
+      </div>
+      <div class="footer"><span>confiança</span><span class="hi">se constrói antes do orçamento</span></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5 — CTA FINAL -->
+  <div class="slide dark" id="s5">
+    <div class="inner">
+      <div class="topbar">
+        <div class="counter" style="margin-left:auto;">05 / 05</div>
+      </div>
+      <img class="logo" src="nexora-icon.png" alt="Nexora">
+      <h2 class="cta-head">O site da sua empresa também pode sair de versão antiga.</h2>
+      <p class="cta-sub">Chama no WhatsApp e vê como fica atualizado de verdade — sem virar rotina de setembro.</p>
+      <div class="pill">(15) 99246-8675</div>
+      <div class="handle">@nexoramkt · nexoramkt.com.br</div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+ INFO  Accepting connections at http://localhost:8080
+ HTTP  11/09/2026 10:16:07 127.0.0.1 GET /index.html
+ HTTP  11/09/2026 10:16:07 127.0.0.1 Returned 301 in 116 ms
+ HTTP  11/09/2026 10:16:07 127.0.0.1 GET /index
+ HTTP  11/09/2026 10:16:07 127.0.0.1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:16:07 127.0.0.1 GET /
+ HTTP  11/09/2026 10:16:07 127.0.0.1 Returned 200 in 9 ms
+ HTTP  11/09/2026 10:16:11 ::1 GET /index.html
+ HTTP  11/09/2026 10:16:11 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:16:11 ::1 GET /index
+ HTTP  11/09/2026 10:16:11 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:16:11 ::1 GET /
+ HTTP  11/09/2026 10:16:11 ::1 Returned 200 in 4 ms
+ HTTP  11/09/2026 10:16:11 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:16:11 ::1 GET /iris-zacarias.png
+ HTTP  11/09/2026 10:16:11 ::1 Returned 200 in 4 ms
+ HTTP  11/09/2026 10:16:11 ::1 Returned 200 in 5 ms
+ HTTP  11/09/2026 10:16:11 ::1 GET /favicon.ico
+ HTTP  11/09/2026 10:16:11 ::1 Returned 404 in 2 ms
+ HTTP  11/09/2026 10:16:14 ::1 GET /index.html
+ HTTP  11/09/2026 10:16:14 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:16:14 ::1 GET /index
+ HTTP  11/09/2026 10:16:14 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:16:14 ::1 GET /
+ HTTP  11/09/2026 10:16:14 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:16:14 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:16:14 ::1 GET /iris-zacarias.png
+ HTTP  11/09/2026 10:16:14 ::1 Returned 200 in 2 ms
+ HTTP  11/09/2026 10:16:14 ::1 Returned 200 in 2 ms
+ HTTP  11/09/2026 10:16:49 ::1 GET /index.html
+ HTTP  11/09/2026 10:16:49 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:16:49 ::1 GET /index
+ HTTP  11/09/2026 10:16:49 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:16:49 ::1 GET /
+ HTTP  11/09/2026 10:16:49 ::1 Returned 200 in 2 ms
+ HTTP  11/09/2026 10:16:49 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:16:49 ::1 GET /iris-zacarias.png
+ HTTP  11/09/2026 10:16:49 ::1 Returned 200 in 2 ms
+ HTTP  11/09/2026 10:16:49 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:16:49 ::1 GET /favicon.ico
+ HTTP  11/09/2026 10:16:49 ::1 Returned 404 in 1 ms
+ HTTP  11/09/2026 10:16:51 ::1 GET /blog.html
+ HTTP  11/09/2026 10:16:51 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:16:51 ::1 GET /blog
+ HTTP  11/09/2026 10:16:51 ::1 Returned 200 in 3 ms
+ HTTP  11/09/2026 10:16:51 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:16:51 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:16:52 ::1 GET /plano-de-saude-negou-cobertura.html
+ HTTP  11/09/2026 10:16:52 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:16:52 ::1 GET /plano-de-saude-negou-cobertura
+ HTTP  11/09/2026 10:16:52 ::1 Returned 200 in 5 ms
+ HTTP  11/09/2026 10:16:52 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:16:52 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:16:54 ::1 GET /abrir-clinica-estrutura-juridica.html
+ HTTP  11/09/2026 10:16:54 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:16:54 ::1 GET /abrir-clinica-estrutura-juridica
+ HTTP  11/09/2026 10:16:54 ::1 Returned 200 in 3 ms
+ HTTP  11/09/2026 10:16:54 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:16:54 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:16:56 ::1 GET /processo-etico-crm-defesa-do-medico.html
+ HTTP  11/09/2026 10:16:56 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:16:56 ::1 GET /processo-etico-crm-defesa-do-medico
+ HTTP  11/09/2026 10:16:56 ::1 Returned 200 in 3 ms
+ HTTP  11/09/2026 10:16:56 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:16:56 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:16:57 ::1 GET /index.html
+ HTTP  11/09/2026 10:16:57 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:16:57 ::1 GET /index
+ HTTP  11/09/2026 10:16:57 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:16:57 ::1 GET /
+ HTTP  11/09/2026 10:16:57 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:16:57 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:16:57 ::1 GET /iris-zacarias.png
+ HTTP  11/09/2026 10:16:57 ::1 Returned 200 in 2 ms
+ HTTP  11/09/2026 10:16:57 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:16:58 ::1 GET /blog.html
+ HTTP  11/09/2026 10:16:58 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:16:58 ::1 GET /blog
+ HTTP  11/09/2026 10:16:58 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:16:58 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:16:58 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:00 ::1 GET /plano-de-saude-negou-cobertura.html
+ HTTP  11/09/2026 10:17:00 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:17:00 ::1 GET /plano-de-saude-negou-cobertura
+ HTTP  11/09/2026 10:17:00 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:00 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:00 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:01 ::1 GET /abrir-clinica-estrutura-juridica.html
+ HTTP  11/09/2026 10:17:01 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:17:01 ::1 GET /abrir-clinica-estrutura-juridica
+ HTTP  11/09/2026 10:17:01 ::1 Returned 200 in 2 ms
+ HTTP  11/09/2026 10:17:01 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:01 ::1 Returned 200 in 6 ms
+ HTTP  11/09/2026 10:17:02 ::1 GET /processo-etico-crm-defesa-do-medico.html
+ HTTP  11/09/2026 10:17:02 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:17:02 ::1 GET /processo-etico-crm-defesa-do-medico
+ HTTP  11/09/2026 10:17:02 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:02 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:02 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:03 ::1 GET /index.html
+ HTTP  11/09/2026 10:17:03 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:17:03 ::1 GET /index
+ HTTP  11/09/2026 10:17:03 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:17:03 ::1 GET /
+ HTTP  11/09/2026 10:17:03 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:03 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:03 ::1 GET /iris-zacarias.png
+ HTTP  11/09/2026 10:17:03 ::1 Returned 200 in 2 ms
+ HTTP  11/09/2026 10:17:03 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:04 ::1 GET /blog.html
+ HTTP  11/09/2026 10:17:04 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:17:04 ::1 GET /blog
+ HTTP  11/09/2026 10:17:04 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:04 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:04 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:05 ::1 GET /plano-de-saude-negou-cobertura.html
+ HTTP  11/09/2026 10:17:05 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:17:05 ::1 GET /plano-de-saude-negou-cobertura
+ HTTP  11/09/2026 10:17:05 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:05 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:05 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:07 ::1 GET /abrir-clinica-estrutura-juridica.html
+ HTTP  11/09/2026 10:17:07 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:17:07 ::1 GET /abrir-clinica-estrutura-juridica
+ HTTP  11/09/2026 10:17:07 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:07 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:07 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:08 ::1 GET /processo-etico-crm-defesa-do-medico.html
+ HTTP  11/09/2026 10:17:08 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:17:08 ::1 GET /processo-etico-crm-defesa-do-medico
+ HTTP  11/09/2026 10:17:08 ::1 Returned 200 in 2 ms
+ HTTP  11/09/2026 10:17:08 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:08 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:09 ::1 GET /index.html
+ HTTP  11/09/2026 10:17:09 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:17:09 ::1 GET /index
+ HTTP  11/09/2026 10:17:09 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:17:09 ::1 GET /
+ HTTP  11/09/2026 10:17:09 ::1 Returned 200 in 0 ms
+ HTTP  11/09/2026 10:17:09 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:09 ::1 GET /iris-zacarias.png
+ HTTP  11/09/2026 10:17:09 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:09 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:10 ::1 GET /blog.html
+ HTTP  11/09/2026 10:17:10 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:17:10 ::1 GET /blog
+ HTTP  11/09/2026 10:17:10 ::1 Returned 200 in 2 ms
+ HTTP  11/09/2026 10:17:10 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:10 ::1 Returned 200 in 0 ms
+ HTTP  11/09/2026 10:17:11 ::1 GET /plano-de-saude-negou-cobertura.html
+ HTTP  11/09/2026 10:17:11 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:17:11 ::1 GET /plano-de-saude-negou-cobertura
+ HTTP  11/09/2026 10:17:11 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:11 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:11 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:12 ::1 GET /abrir-clinica-estrutura-juridica.html
+ HTTP  11/09/2026 10:17:12 ::1 Returned 301 in 1 ms
+ HTTP  11/09/2026 10:17:12 ::1 GET /abrir-clinica-estrutura-juridica
+ HTTP  11/09/2026 10:17:12 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:13 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:13 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:14 ::1 GET /processo-etico-crm-defesa-do-medico.html
+ HTTP  11/09/2026 10:17:14 ::1 Returned 301 in 0 ms
+ HTTP  11/09/2026 10:17:14 ::1 GET /processo-etico-crm-defesa-do-medico
+ HTTP  11/09/2026 10:17:14 ::1 Returned 200 in 1 ms
+ HTTP  11/09/2026 10:17:14 ::1 GET /logo-marca.png
+ HTTP  11/09/2026 10:17:14 ::1 Returned 200 in 1 ms
