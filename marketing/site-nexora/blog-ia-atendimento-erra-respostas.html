@@ -23,8 +23,7 @@
 <link rel="icon" href="assets/favicon.png">
 <link rel="preload" href="assets/fonts/clash-display-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/general-sans-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/fonts.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -37,12 +36,23 @@
       "datePublished": "2026-08-21",
       "dateModified": "2026-08-21",
       "inLanguage": "pt-BR",
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexoramkt.com.br/blog-ia-atendimento-erra-respostas.html" },
-      "author": { "@type": "Organization", "name": "Nexora" },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://nexoramkt.com.br/blog-ia-atendimento-erra-respostas.html"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Manoel Vitor",
+        "jobTitle": "Fundador da Nexora",
+        "url": "https://nexoramkt.com.br/sobre.html"
+      },
       "publisher": {
         "@type": "Organization",
         "name": "Nexora",
-        "logo": { "@type": "ImageObject", "url": "https://nexoramkt.com.br/assets/nexora-logo-principal.png" }
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nexoramkt.com.br/assets/nexora-logo-principal.png"
+        }
       }
     },
     {
@@ -51,37 +61,58 @@
         {
           "@type": "Question",
           "name": "A IA pode inventar uma resposta errada pro meu cliente?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Pode, se estiver mal configurada. Isso se chama alucinação — a IA completa a resposta com algo plausível quando não tem a informação certa, em vez de dizer que não sabe. É um risco real, documentado em casos como o da Air Canada, e a forma de reduzir é dar escopo fechado e fallback claro pra automação, não confiar que ela vai 'se virar' sozinha." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pode, se estiver mal configurada. Isso se chama alucinação — a IA completa a resposta com algo plausível quando não tem a informação certa, em vez de dizer que não sabe. É um risco real, documentado em casos como o da Air Canada, e a forma de reduzir é dar escopo fechado e fallback claro pra automação, não confiar que ela vai 'se virar' sozinha."
+          }
         },
         {
           "@type": "Question",
           "name": "Por que isso acontece mesmo com uma IA boa?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Quase sempre por duas falhas de configuração, não por limite da tecnologia: a base de conhecimento está incompleta ou desatualizada, ou não existe uma regra clara de quando a IA deve parar e chamar um humano em vez de tentar responder." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quase sempre por duas falhas de configuração, não por limite da tecnologia: a base de conhecimento está incompleta ou desatualizada, ou não existe uma regra clara de quando a IA deve parar e chamar um humano em vez de tentar responder."
+          }
         },
         {
           "@type": "Question",
           "name": "Quem responde se a IA prometer algo que a empresa não pode cumprir?",
-          "acceptedAnswer": { "@type": "Answer", "text": "A empresa, não a ferramenta. Foi exatamente o que um tribunal decidiu no caso Air Canada em 2024: a companhia tentou argumentar que o chatbot era uma entidade separada e o tribunal rejeitou isso, obrigando a empresa a honrar o que a IA tinha prometido no site dela." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A empresa, não a ferramenta. Foi exatamente o que um tribunal decidiu no caso Air Canada em 2024: a companhia tentou argumentar que o chatbot era uma entidade separada e o tribunal rejeitou isso, obrigando a empresa a honrar o que a IA tinha prometido no site dela."
+          }
         },
         {
           "@type": "Question",
           "name": "Como reduzir o risco de erro na prática?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Quatro coisas, nesta ordem: escopo fechado (a IA só responde o que a empresa confirma), fallback claro pra humano fora desse escopo, revisão periódica das conversas reais, e lançamento gradual em vez de automatizar tudo de uma vez." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quatro coisas, nesta ordem: escopo fechado (a IA só responde o que a empresa confirma), fallback claro pra humano fora desse escopo, revisão periódica das conversas reais, e lançamento gradual em vez de automatizar tudo de uma vez."
+          }
         },
         {
           "@type": "Question",
           "name": "Dá pra automatizar 100% do atendimento desde o primeiro dia?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Não é recomendado. O período inicial serve pra ver como a IA se comporta com pergunta real, não hipotética, e ajustar antes de ampliar o escopo. Automatizar tudo de uma vez tira justamente a chance de pegar erro antes que ele chegue no cliente." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não é recomendado. O período inicial serve pra ver como a IA se comporta com pergunta real, não hipotética, e ajustar antes de ampliar o escopo. Automatizar tudo de uma vez tira justamente a chance de pegar erro antes que ele chegue no cliente."
+          }
         },
         {
           "@type": "Question",
           "name": "Automação com IA é arriscada pra área jurídica ou de saúde?",
-          "acceptedAnswer": { "@type": "Answer", "text": "É uma área que exige mais cautela, sim. O erro nesses nichos não é só uma resposta ruim — pode virar orientação errada com consequência real, e quem responde por isso é o profissional, não a automação. Nesses casos a IA ainda ajuda, mas num escopo mais estreito — agendamento, dúvida institucional, triagem — com revisão humana maior no que sobra." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É uma área que exige mais cautela, sim. O erro nesses nichos não é só uma resposta ruim — pode virar orientação errada com consequência real, e quem responde por isso é o profissional, não a automação. Nesses casos a IA ainda ajuda, mas num escopo mais estreito — agendamento, dúvida institucional, triagem — com revisão humana maior no que sobra."
+          }
         },
         {
           "@type": "Question",
           "name": "Como saber se a IA está errando sem eu perceber?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Só revisando as conversas de verdade, principalmente nas primeiras semanas. Erro de automação raramente aparece como reclamação formal — ele passa despercebido até virar um cliente insatisfeito que nunca te contou por quê. Revisão periódica é o que pega isso antes." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Só revisando as conversas de verdade, principalmente nas primeiras semanas. Erro de automação raramente aparece como reclamação formal — ele passa despercebido até virar um cliente insatisfeito que nunca te contou por quê. Revisão periódica é o que pega isso antes."
+          }
         }
       ]
     }
@@ -95,7 +126,7 @@
 <header class="nav-wrap">
   <div class="nav-bar">
   <a href="index.html" class="nav-logo">
-    <img src="assets/nexora-icon.png" alt="">
+    <img src="assets/nexora-icon.webp" alt="" width="97" height="73">
     <span class="nav-logo-word">Nexora</span>
   </a>
   <div class="nav-island">
@@ -143,7 +174,7 @@
   <div class="ribbed" style="width:72%; height:150%; top:-30%; right:-16%;"></div>
   <div class="container relative">
     <div class="article">
-      <div class="post-meta"><span>IA</span><span class="dot"></span><span>21 ago 2026</span><span class="dot"></span><span>10 min de leitura</span></div>
+      <div class="post-meta"><span>IA</span><span class="dot"></span><span>21 ago 2026</span><span class="dot"></span><span>10 min de leitura</span><span class="dot"></span><span>Por Manoel Vitor</span></div>
       <h1 style="max-width:24ch;">IA no atendimento erra? Veja por que isso acontece — e como evitar</h1>
     </div>
   </div>
@@ -330,6 +361,8 @@
 
       <p>Se você está considerando automatizar e quer entender qual escopo faz sentido pro seu tipo de atendimento antes de decidir, <a href="https://wa.me/5515992468675?text=Ol%C3%A1%2C%20li%20o%20artigo%20sobre%20erros%20de%20IA%20no%20atendimento%20e%20queria%20entender%20como%20evitar%20isso%20no%20meu%20caso" target="_blank" rel="noopener">manda uma mensagem</a> contando como funciona hoje. Te digo com honestidade onde a automação ajuda e onde ela ainda não é a resposta certa pro seu caso.</p>
 
+      <p class="article-note">Escrito por <a href="sobre.html">Manoel Vitor</a>, fundador da Nexora, agência de marketing digital em Boituva/SP.</p>
+
       <div class="article-related">
         <h4>Leia também</h4>
         <a href="blog-automacao-ia-substitui-atendente.html">Automação com IA substitui contratar um atendente?</a>
@@ -364,7 +397,7 @@
   <div class="container">
     <div class="footer-top">
       <div>
-        <img src="assets/nexora-logo-principal.png" alt="Nexora" class="footer-logo">
+        <img src="assets/nexora-logo-principal.webp" alt="Nexora" class="footer-logo" width="276" height="91" loading="lazy">
         <p>Site, tráfego, SEO e automação — tudo puxando pro mesmo objetivo: fechar cliente.</p>
       </div>
       <div class="footer-links">

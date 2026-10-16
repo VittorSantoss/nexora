@@ -1,3 +1,40 @@
+/* Fontes servidas do proprio dominio — sem dependencia externa */
+@font-face{
+  font-family:"Clash Display";
+  src:url("../assets/fonts/clash-display-400.woff2") format("woff2");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Clash Display";
+  src:url("../assets/fonts/clash-display-600.woff2") format("woff2");
+  font-weight:600;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"General Sans";
+  src:url("../assets/fonts/general-sans-400.woff2") format("woff2");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"General Sans";
+  src:url("../assets/fonts/general-sans-500.woff2") format("woff2");
+  font-weight:500;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"General Sans";
+  src:url("../assets/fonts/general-sans-600.woff2") format("woff2");
+  font-weight:600;
+  font-style:normal;
+  font-display:swap;
+}
+
 /* ===== Nexora — Design System v2 ===== */
 :root{
   --bg: #050505;
@@ -301,13 +338,13 @@ body.nav-is-open .nav-island .nav-toggle span{ background:#fff; }
 .faq-a p{ overflow:hidden; min-height:0; color: var(--text-dim); padding-bottom:1.6rem; font-size:.96rem; }
 
 /* ===== Reveal — one considered entrance, not scattered per-card ===== */
-.reveal{ opacity:0; filter: blur(6px); translate: 0 22px; transition: opacity .9s var(--spring), filter .9s var(--spring), translate .9s var(--spring); }
-.reveal.is-visible{ opacity:1; filter: blur(0); translate:0 0; }
+.reveal{ opacity:0; translate: 0 22px; transition: opacity .9s var(--spring), translate .9s var(--spring); }
+.reveal.is-visible{ opacity:1; translate:0 0; }
 
 /* ===== Footer ===== */
 .footer{ border-top:1px solid var(--hairline); padding-block: 4.5rem 2rem; position:relative; z-index:1; }
 .footer-top{ display:flex; justify-content:space-between; align-items:flex-end; gap:2rem; flex-wrap:wrap; padding-bottom: 3rem; }
-.footer-logo{ height:32px; margin-bottom:1.4rem; }
+.footer-logo{ height:32px; width:auto; margin-bottom:1.4rem; }
 .footer-top p{ color: var(--text-dim); font-size:.95rem; max-width:340px; }
 .footer-links{ display:flex; gap: clamp(2rem, 5vw, 4.5rem); flex-wrap:wrap; }
 .footer-col h4{ font-size:.75rem; font-weight:500; text-transform:uppercase; letter-spacing:.1em; color: var(--text-faint); margin-bottom:1.1rem; }
@@ -454,6 +491,26 @@ body.nav-is-open .nav-island .nav-toggle span{ background:#fff; }
 .post-link svg{ width:13px; height:13px; transition: translate .4s var(--spring-soft); }
 .post-card:hover .post-link svg{ translate:3px -3px; }
 
+/* Paginacao dos cards — o JS esconde o que nao e da pagina atual */
+[data-paginate] > [hidden]{ display:none; }
+.pager{
+  display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:.4rem;
+  margin-top: clamp(2.2rem, 4vw, 3rem);
+}
+.pager button{
+  min-width:2.75rem; height:2.75rem; padding-inline:.7rem; border-radius:999px;
+  display:inline-flex; align-items:center; justify-content:center;
+  border:1px solid var(--hairline); background: var(--surface); color: var(--text-dim);
+  font-size:.92rem; font-weight:500; font-variant-numeric: tabular-nums;
+  transition: border-color .4s var(--spring-soft), background .4s var(--spring-soft), color .4s var(--spring-soft);
+}
+.pager button:hover:not(:disabled):not([aria-current]){ border-color: var(--hairline-strong); background: rgba(255,255,255,.06); color: var(--text); }
+.pager button[aria-current="page"]{ background: var(--text); border-color: var(--text); color:#0a0a0a; cursor:default; }
+.pager button:disabled{ opacity:.3; cursor:default; }
+.pager button:focus-visible{ outline:2px solid var(--purple); outline-offset:3px; }
+.pager button svg{ width:16px; height:16px; }
+.pager-gap{ width:1.4rem; text-align:center; color: var(--text-faint); user-select:none; }
+
 /* ===== Artigo ===== */
 .article{ max-width: 720px; margin-inline:auto; }
 .article p{ color:var(--text-dim); font-size:1.04rem; margin-bottom:1.5rem; max-width:none; }
@@ -560,7 +617,7 @@ body.nav-is-open .nav-island .nav-toggle span{ background:#fff; }
 
 /* Respeita quem prefere menos animacao */
 @media (prefers-reduced-motion: reduce){
-  .reveal{ opacity:1; filter:none; translate:none; transition:none; }
+  .reveal{ opacity:1; translate:none; transition:none; }
   .orb-main{ animation:none; }
   html{ scroll-behavior:auto; }
 }

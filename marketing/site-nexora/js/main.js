@@ -43,6 +43,80 @@ if (revealEls.length) {
   revealEls.forEach((el) => io.observe(el));
 }
 
+// Paginação dos cards de artigo (blog e "Pra aprofundar" dos serviços).
+// Todos os links continuam no HTML — o Google enxerga tudo, o JS só mostra
+// uma página por vez. A página fica no #pagina-N pra quem volta de um artigo.
+document.querySelectorAll("[data-paginate]").forEach((grid) => {
+  const items = Array.from(grid.children);
+  const perPage = Number(grid.dataset.paginate) || 9;
+  const total = Math.ceil(items.length / perPage);
+  if (total < 2) return;
+
+  const pager = document.createElement("nav");
+  pager.className = "pager";
+  pager.setAttribute("aria-label", "Páginas de artigos");
+  grid.after(pager);
+
+  const narrow = window.matchMedia("(max-width: 520px)");
+  const hashPage = Number((location.hash.match(/^#pagina-(\d+)$/) || [])[1]);
+  let current = hashPage >= 1 && hashPage <= total ? hashPage : 1;
+
+  // 1 … 4 5 6 … 9 — nunca troca uma página só por reticências
+  const pageList = () => {
+    const span = (narrow.matches ? 0 : 1) + (current === 1 || current === total ? 1 : 0);
+    const shown = (p) => p === 1 || p === total || Math.abs(p - current) <= span;
+    const list = [];
+    for (let p = 1; p <= total; p++) {
+      if (shown(p) || (shown(p - 1) && shown(p + 1))) list.push(p);
+      else if (list[list.length - 1] !== null) list.push(null);
+    }
+    return list;
+  };
+
+  const arrow = (points) =>
+    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="${points}"/></svg>`;
+
+  const button = (page, html, label) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.innerHTML = html;
+    b.setAttribute("aria-label", label);
+    if (page === current) b.setAttribute("aria-current", "page");
+    if (page < 1 || page > total) b.disabled = true;
+    else b.addEventListener("click", () => goTo(page));
+    return b;
+  };
+
+  const render = () => {
+    items.forEach((el, i) => (el.hidden = Math.floor(i / perPage) + 1 !== current));
+    pager.replaceChildren(
+      button(current - 1, arrow("15 18 9 12 15 6"), "Página anterior"),
+      ...pageList().map((p) => {
+        if (p !== null) return button(p, String(p), `Página ${p}`);
+        const gap = document.createElement("span");
+        gap.className = "pager-gap";
+        gap.textContent = "…";
+        return gap;
+      }),
+      button(current + 1, arrow("9 18 15 12 9 6"), "Próxima página")
+    );
+  };
+
+  const goTo = (page) => {
+    if (page === current) return;
+    current = page;
+    render();
+    history.replaceState(null, "", current === 1 ? location.pathname + location.search : `#pagina-${current}`);
+    // Volta pro começo da lista (título da seção incluso) e leva o foco junto
+    const top = grid.parentElement.getBoundingClientRect().top + window.scrollY - 110;
+    window.scrollTo(0, top);
+    items[(current - 1) * perPage].focus({ preventScroll: true });
+  };
+
+  render();
+  narrow.addEventListener("change", render);
+});
+
 // Formulário de contato -> abre o WhatsApp com a mensagem preenchida
 const contactForm = document.querySelector("#contactForm");
 if (contactForm) {
@@ -60,6 +134,7 @@ if (contactForm) {
       `Mensagem: ${mensagem}`;
 
     const numero = "5515992468675";
+    reportWhatsApp();
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(texto)}`, "_blank");
   });
 }
@@ -112,3 +187,38 @@ document.querySelectorAll(".nav-drop").forEach((drop) => {
     }
   });
 });
+
+// Google Ads — mede quem chega pelo anúncio e clica no WhatsApp.
+// Carregado daqui (e não inline) pra caber na CSP do vercel.json.
+// Quem liga o Global Privacy Control no navegador não é rastreado.
+const ADS_ID = "AW-18503311042";
+const ADS_CONVERSAO_WHATSAPP = "AW-18503311042/ooXhCKH6_pcdEMK9iPdE";
+const adsAtivo = !navigator.globalPrivacyControl;
+
+if (adsAtivo) {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () {
+    window.dataLayer.push(arguments);
+  };
+  gtag("js", new Date());
+  gtag("config", ADS_ID);
+
+  const gtagScript = document.createElement("script");
+  gtagScript.async = true;
+  gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${ADS_ID}`;
+  document.head.appendChild(gtagScript);
+
+  document.addEventListener("click", (e) => {
+    if (e.target.closest('a[href*="wa.me/"]')) reportWhatsApp();
+  });
+}
+
+function reportWhatsApp() {
+  if (!adsAtivo || typeof window.gtag !== "function") return;
+  gtag("event", "conversion", {
+    send_to: ADS_CONVERSAO_WHATSAPP,
+    value: 1.0,
+    currency: "BRL",
+    transport_type: "beacon",
+  });
+}
